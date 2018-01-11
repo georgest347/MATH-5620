@@ -3,6 +3,6 @@ This software manual includes code for each of the homeworks for MATH 5620. Ther
 of the page where codes are listed in alphebetical order.
 
 
-   [HW1](https://georgest347.github.io/MATH-5620/softwareManual/HW1/HW1problems)
+   
 
 
