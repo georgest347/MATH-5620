@@ -42,4 +42,3 @@ void compEpsilon(float epsilon){
     cout<< "Machine Epsilon is: "<<old_epsilon<<endl;
 }
 
-**Last Modified:** September/2017
