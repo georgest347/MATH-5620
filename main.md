@@ -1,3 +1,3 @@
 *This is a test markdown*
 
-[Software Manual](https://georgest347.github.io/MATH-5620/softwareManual/softwareManual)
+https://georgest347.github.io/MATH-5620/softwareManual/softwareManual
