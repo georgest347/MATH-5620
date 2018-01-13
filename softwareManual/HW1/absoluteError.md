@@ -1,43 +1,32 @@
-**Function Name:**           compEpsilon
+**Function Name:**           absoluteError()
 
 **Author:** George Staples
 
 **Language:** C++
 
-**Description/Purpose:** This function will compute the machine precision of a computer.
+**Description/Purpose:** This function will compute the absolute error between a actual value and an approximation.
 
-**Input:** A floating point number to find the machine precision around.
+**Input:** Two double numbers. The first is the real value and the second is the approximated value.
 
-**Output:** This function writes the value of the machine precision to the screen.
+**Output:** This function returns the absolute error as a double.
 
 **Usage/Example:**
 
-Typically inputing one will find the machine precision. The function can be called as shown below:
+The function is used when the absolute error is desired between two numbers. It can be called by:
 
-      compEpsilon(1);
+       cout<<compEpsilon(6,6.5)<<endl;
       
 Output from the lines above:
 
-      Machine Epsilon is: 1.0842e-019
+      0.5
+      
+The value can also be stored for later use by:
 
+    double error=compEpsilon(6,6.5);
 
-**Implementation/Code:** The following is the code for compEpsilon()
+**Implementation/Code:** The following is the code for absoluteError()
 
-/*
-Function created to find the machine
-epsilon of a computer.
-*/
-void compEpsilon(float epsilon){
-
-    //Define a variable to hold the old value of epsilon
-    float old_epsilon;
-
-    //A loop to find the machine epsilon. Finds the smallest value of epsilon when added to 1
-    //does not equal one.
-    while((1+epsilon)!=1){
-        old_epsilon=epsilon;
-        epsilon/=2;
+    double absoluteError(double realValue, double approxValue){
+        double absError=abs(realValue-approxValue);
+        return absError;
     }
-    //Prints the value on the screen
-    cout<< "Machine Epsilon is: "<<old_epsilon<<endl;
-}
