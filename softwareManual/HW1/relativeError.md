@@ -19,6 +19,7 @@ Use the function as shown below to find the relative error between 1 and 0.75.
 Output from the lines above:
 
       0.25
+      
 The value returned from relativeError() can also be stored in a variable as shown below:
 
     double relError=relativeError(1,0.75);
