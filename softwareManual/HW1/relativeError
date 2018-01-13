@@ -1,43 +1,40 @@
-**Function Name:**           compEpsilon
+**Function Name:**           relativeError()
 
 **Author:** George Staples
 
 **Language:** C++
 
-**Description/Purpose:** This function will compute the machine precision of a computer.
+**Description/Purpose:** This function will compute the relative error of two values.
 
-**Input:** A floating point number to find the machine precision around.
+**Input:** The real value, and the approximated value. Both numbers are double.
 
-**Output:** This function writes the value of the machine precision to the screen.
+**Output:** The function will return the decimal value of the relative error.
 
 **Usage/Example:**
 
-Typically inputing one will find the machine precision. The function can be called as shown below:
+Use the function as shown below to find the relative error between 1 and 0.75. 
 
-      compEpsilon(1);
+      cout<<relativeError(1,0.75)<<endl;
       
 Output from the lines above:
 
-      Machine Epsilon is: 1.0842e-019
+      0.25
+The value returned from relativeError() can also be stored in a variable as shown below:
 
+    double relError=relativeError(1,0.75);
 
-**Implementation/Code:** The following is the code for compEpsilon()
+**Implementation/Code:** The following is the code for relativeError()
 
-/*
-Function created to find the machine
-epsilon of a computer.
-*/
-void compEpsilon(float epsilon){
+    double relativeError(double realValue, double approxValue){
 
-    //Define a variable to hold the old value of epsilon
-    float old_epsilon;
+        if  (realValue == 0)
+        {
+            cout<<"Can not divide by 0"<<endl;
+            return 0;
+        }
+        else{
+            double relError=abs((realValue-approxValue)/realValue);
+            return relError;
+        }
 
-    //A loop to find the machine epsilon. Finds the smallest value of epsilon when added to 1
-    //does not equal one.
-    while((1+epsilon)!=1){
-        old_epsilon=epsilon;
-        epsilon/=2;
     }
-    //Prints the value on the screen
-    cout<< "Machine Epsilon is: "<<old_epsilon<<endl;
-}
