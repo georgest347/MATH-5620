@@ -1,4 +1,4 @@
-**Function Name:**           compEpsilon
+**Function Name:**           compEpsilon()
 
 **Author:** George Staples
 
@@ -40,5 +40,5 @@ void compEpsilon(float epsilon){
     }
     //Prints the value on the screen
     cout<< "Machine Epsilon is: "<<old_epsilon<<endl;
-}
+    }
 
