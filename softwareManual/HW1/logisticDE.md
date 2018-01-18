@@ -11,7 +11,7 @@ equation:
     
 With the analytic solution taken to be:
 
-    P(t)=t*(a*Pnot-B*(Pnot)^2)+Pnot
+<a href="https://www.codecogs.com/eqnedit.php?latex=P(t)=\frac{\alpha&space;e^{\alpha&space;t}}{\beta&space;e^{\alpha&space;t}&plus;C}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(t)=\frac{\alpha&space;e^{\alpha&space;t}}{\beta&space;e^{\alpha&space;t}&plus;C}" title="P(t)=\frac{\alpha e^{\alpha t}}{\beta e^{\alpha t}+C}" /></a>
     
 Where Pnot was given to be the inital condition P(0)=Pnot.
 
