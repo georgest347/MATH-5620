@@ -25,7 +25,7 @@ correct unit analysis must be preformed to ensure correct answers.
 This function requires the user to find the values of u1 and u2 for the variation of parameters
 used in the analytic solution. The assumed solution for the homogeneous equation is: 
 
-      <a href="https://www.codecogs.com/eqnedit.php?latex=y(t)=e^{rt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y(t)=e^{rt}" title="y(t)=e^{rt}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=y(t)=e^{rt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y(t)=e^{rt}" title="y(t)=e^{rt}" /></a>
 
 The functions u1 and u2 are given below:
 
