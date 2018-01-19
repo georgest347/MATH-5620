@@ -1,10 +1,12 @@
-**Function Name:**           compEpsilon
+**Function Name:**           SOLDE()
 
 **Author:** George Staples
 
 **Language:** C++
 
-**Description/Purpose:** This function will compute the machine precision of a computer.
+**Description/Purpose:** This function will compute the solution at time 't' for the following differential equation:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=my''&plus;cy'&plus;ky=f(t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?my''&plus;cy'&plus;ky=f(t)" title="my''+cy'+ky=f(t)" /></a>
 
 **Input:** A floating point number to find the machine precision around.
 
