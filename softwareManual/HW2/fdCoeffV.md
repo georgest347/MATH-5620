@@ -15,10 +15,10 @@
   n is the number of numbers in x[] or length(x)
   
   This function uses luDecomposition() function to solve the matrix Ax=b. This function must be included for the program to work properly. The following headers must also be included:
-    #include <iostream>
-    #include <iomanip>
-    #include <vector>
-    #include <cmath>
+      #include <iostream>
+      #include <iomanip>
+      #include <vector>
+      #include <cmath>
 
 **Output:** This function prints the value of y(t) to the screen. If units are used with this function,
 correct unit analysis must be preformed to ensure correct answers.
