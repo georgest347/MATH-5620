@@ -15,132 +15,104 @@
   n is the number of numbers in x[] or length(x)
   
   This function uses luDecomposition() function to solve the matrix Ax=b. This function must be included for the program to work properly. The following headers must also be included:
+  ```
       #include <iostream>
       #include <iomanip>
       #include <vector>
       #include <cmath>
+  ```
 
-**Output:** This function prints the value of y(t) to the screen. If units are used with this function,
-correct unit analysis must be preformed to ensure correct answers.
+**Output:** This function returns the c_j coefficients to the function that called it. The coefficients can then be used later, or printed to the screen.
 
 **Usage/Example:**
 
-This function requires the user to find the values of u1 and u2 for the variation of parameters
-used in the analytic solution. The assumed solution for the homogeneous equation is: 
+This function was called using the following code:
+```
+	double x[5] = { 1,2,3,4,5 }; 	//Define the x vector
+	int n = 5;			//number of terms in the x vector
+	vector<double> coeff;		// Vector to hold the coeff returned
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=y(t)=e^{rt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y(t)=e^{rt}" title="y(t)=e^{rt}" /></a>
+	coeff=fdCoeffV(2, 5, x, n);	//call the function
 
-The functions u1 and u2 are given below:
+	//Prints the coefficients to the screen
+	for (int i = 0; i < n; i++) {
+		cout << coeff[i] << endl;
+	}
+```
+The results on the screen were as follows:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=u_1(t)=-\int&space;\frac{y_2(s)f(s)}{W(s)}ds" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_1(t)=-\int&space;\frac{y_2(s)f(s)}{W(s)}ds" title="u_1(t)=-\int \frac{y_2(s)f(s)}{W(s)}ds" /></a>
+```
+	0.916667
+	-4.66667
+	9.5
+	-8.66667
+	2.91667
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=u_2(t)=\int&space;\frac{y_1(s)f(s)}{W(s)}ds" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_2(t)=\int&space;\frac{y_1(s)f(s)}{W(s)}ds" title="u_2(t)=\int \frac{y_1(s)f(s)}{W(s)}ds" /></a>
+```
+Results have been validated with matlab code from [1] pp 11
 
-The function W(s) is the Wronskian and the function f(s) is the forcing function.
+**Implementation/Code:** The following is the code for fdCoeffV()
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=W(s)=&space;\begin{vmatrix}&space;y_1(s)&space;&&space;y_2(s)\\&space;y_1'(s)&&space;y_2'(s)&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?W(s)=&space;\begin{vmatrix}&space;y_1(s)&space;&&space;y_2(s)\\&space;y_1'(s)&&space;y_2'(s)&space;\end{vmatrix}" title="W(s)= \begin{vmatrix} y_1(s) & y_2(s)\\ y_1'(s)& y_2'(s) \end{vmatrix}" /></a>
+      vector<double> fdCoeffV(int k, double xbar, double x[],int n) {
+	//Builds a matrix A, U, L
+	vector<double> a(n);
+	vector<vector<double> > A(n, a);
+	vector<vector<double> > U(n, a);
+	vector<vector<double> > L(n, a);
+	vector<double> y(n);
 
+	// Builds the b vector and c vector
+	vector<double> b(n);
+	vector<double> c(n);
 
-**Implementation/Code:** The following is the code for SOLDE()
+	// Varibles
+	double fact = 0;
+	double g = 0;
 
-      double SOLDE(double a,double b, double c,double yo, double vo, double t) {
-      	/* SOLDE (Second Order Linear Differential Equation)
-      	This function takes the constant coefficents of a 2nd
-      	order LDE and solves using the analyitic solution
-	      for the response y(t) at a given value of 't'.
+	// Initializes the matrix with 0's
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			A[i][j] = 1;
+			//cout << A[i][j]; //Unmute to visualize the matrix
+		}
+		//cout << " " << endl; //Unmute to visualize the matrix	
+		b[i] = 0;
+		//cout << b[i] << endl; //Unmute to visualize the 'b' vector
+	}	
 
-	      Using varation of parameters to find the particular
-	      solution, this function requires the user to know 
-	      the forcing function, and the assumed solution to find
-	      the homogeneous solution. The assumed solution for 
-	      the yc(t)= exp(rt).
-
-	      The full analytic solution is shown below:
-	      y(t)=yc(t)+yp(t);
-
-	      Where:
-	      yc(t)=C1*y1(t)+C2*y2(t);
-	      yp(t)=u1(t)*y1(t)+u2(t)*y2(t);
-
-	      Where u1 and u2 are the integrals shown below:
-	      u1(t)=-int((y2(s)*f(s))/(W(s)));
-	      u1(t)=int((y1(s)*f(s))/(W(s)));
-
-	      The function f(s) is the forcing function
-
-	      Where W(s) is the Wronskian:
-	      W(s)=y2'(s)*y1(s)-y1'(s)*y2(s);
-
-	      The inital conditions are taken to be:
-	      y(0)=yo, and y'(0)=vo;
-	      Inital time value is 0. If inital time
-	      changes, code needs to be updated!
-	      */
-
+	// Checks to make sure the length of the vector x is greater than k
+	if (k >= n) {
+		cout << "ERROR, length of x must be greater than k" << endl;
+		return b;
+	}
 	
-	      //Set up Varibles
-	      double r1, r2, i1, i2, C1, C2, Ytime,u1,u2,u1t,u2t,yp,dyp;
-	      int tnot = 0;
-
+	// Set the k'th derivative term to 1
+	b[k] = 1;
 	
-	      //Calculate the discriminent
-	      double d = (b*b) - (4 * a*c);
-	      //Finds the roots of the quadradic equation
-	      if (d>0)
-	      {
-      		//Two real and distinct roots
-	      	r1 = (-b + sqrt(d)) / (2 * a);
-		      r2 = (-b - sqrt(d)) / (2 * a);
-	      }
-	      else if (d == 0)
-	      {
-      		//Two real and equal roots
-      		r1 = -b / (2 * a);
-	      	r2 = -b / (2 * a);
-	      }
-	      else {
-		      //Roots are complex and imaginary
-		      r1 = -b / (2 * a);
-		      i1 = sqrt(-d) / (2 * a);
-		      r2 = r1;
-		      i2 = (-1)*i1;
-		      cout << "roots are imaginary" << endl;
-	      }
-
-	      /*Use this section for the particular solution.
-	      Particular solution has the form of:
-	      yp(t)=u1(t)*y1(t)+u2(t)*y2(t);
-
-	      Where u1 and u2 are the integrals shown below:
-      	u1(t)=-int((y2(s)*f(s))/(W(s)));
-	      u1(t)=int((y1(s)*f(s))/(W(s)));
-      	Calculate these integrals and place them below.
-	      */
-
-	      //Evaluate these at initial time t=0, use tnot;
-	      u1 = tnot;
-	      u2 = tnot;
+	// Enumerates the A matrix
+	for (int i = 1; i <= n; i++) {
+		g = i - 1;
+		fact = factorial(g);
+		for (int j = 0; j < n; j++) {
+			A[i-1][j] = (A[i-1][j]) * (1 / fact)*pow((x[j] - xbar), g);
+		}
+	}
+	/*
+	// To see the A matrix for debugging
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << A[i][j]<<"    "; //Unmute to visualize the matrix
+		}
+		cout << " " << endl; //Unmute to visualize the matrix		
+	}
+	*/
 	
-	      //For the final response, evaluate the functions
-	      //u1 and u2 at time=t; replace tnot with t;
-	      u1t = tnot;
-	      u2t = tnot;
-
-	      // This is the particular solution evaluated at the
-	      // inital condition values. t=tnot;
-	      yp = u1 * exp(r1*tnot) + u2 * exp(r2*tnot);
-	      dyp=r1* u1 * exp(r1*tnot) + r2*u2 * exp(r2*tnot);
-
-	      //Finds the condstant values C1 and C2 for the
-	      // homogeneous solution. 
-      	//yc(t)=C1*y1+C2*y2
+	y = luDecomposition(A, n, b);
 	
-	      //
-	      C1 = (1 / (r2 - r1))*(r2*(yo - yp) - (vo - dyp));
-	      C2 = (1 / (r2 - r1))*((-1)*r2*(yo - yp) + (vo - dyp));
-
-	      // Finds the response at time t=t;
-	      Ytime = C1 * exp(r1*t)+ C2 * exp(r2*t)+ u1t * exp(r1*t)+ u2t * exp(r1*t);
-
-	      return Ytime;
-       }
+		return y;
+    }
+       
+   **References** 
+       
+	[1] "Finite Difference Methods for Ordinary and Partial Differential Equations", Randall J. LeVeque, 2007
+		www.siam.org/books/OT98
