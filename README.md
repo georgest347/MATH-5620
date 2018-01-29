@@ -19,6 +19,8 @@ All code for Math 5620:
 | Problems | Function Name      | Description                                  |
 | :------: |:------------------:| :------------------------------------------: |
 | 1        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
+| 1.a       | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |                |
+| 1.b        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |                |
 | 3        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/absoluteError)      | Returns the aboslute error of two numbers    |
 | 4        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/relativeError)      | Reterns the relative error of two numbers    |
 | 5        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
