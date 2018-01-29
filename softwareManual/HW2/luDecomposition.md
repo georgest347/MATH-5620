@@ -27,6 +27,24 @@ This function is used to solve the problem given below:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}&space;3&space;&&space;1\\&space;-6&space;&-4&space;\end{bmatrix}*\begin{bmatrix}&space;x_{1}\\x_{2}&space;\end{bmatrix}=\begin{bmatrix}&space;1\\2&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;3&space;&&space;1\\&space;-6&space;&-4&space;\end{bmatrix}*\begin{bmatrix}&space;x_{1}\\x_{2}&space;\end{bmatrix}=\begin{bmatrix}&space;1\\2&space;\end{bmatrix}" title="\begin{bmatrix} 3 & 1\\ -6 &-4 \end{bmatrix}*\begin{bmatrix} x_{1}\\x_{2} \end{bmatrix}=\begin{bmatrix} 1\\2 \end{bmatrix}" /></a>
 
+The driving code is defined below:
+```
+	int n = 2;
+	vector<double> a(n);
+	vector<vector<double> > A(n,a);
+	vector<double> b(n);
+
+	A[0][0] = 3;
+	A[0][1] = 1;
+	A[1][0] = -6;
+	A[1][1] = -4;
+
+	b[0] = 1;
+	b[1] = 2;
+
+	luDecomposition( A, n, b);
+```
+
 The results on the screen were as follows:
 
 ```
