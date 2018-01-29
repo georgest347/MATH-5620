@@ -49,7 +49,7 @@ The results on the screen were as follows:
 	2.91667
 
 ```
-Results have been validated with matlab code from [1] pp 11
+Results have been validated with matlab code from [[1]](http://www.siam.org/books/OT98/) pp 11
 
 **Implementation/Code:** The following is the code for fdCoeffV()
 
@@ -115,4 +115,4 @@ Results have been validated with matlab code from [1] pp 11
    **References** 
        
 	[1] "Finite Difference Methods for Ordinary and Partial Differential Equations", Randall J. LeVeque, 2007
-		www.siam.org/books/OT98
+		[www.siam.org/books/OT98](http://www.siam.org/books/OT98/)
