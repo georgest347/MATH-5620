@@ -113,6 +113,6 @@ Results have been validated with matlab code from [[1]](http://www.siam.org/book
     }
        
    **References** 
-       
-	[1] "Finite Difference Methods for Ordinary and Partial Differential Equations", Randall J. LeVeque, 2007
+     
+   [1] "Finite Difference Methods for Ordinary and Partial Differential Equations", Randall J. LeVeque, 2007
 		[www.siam.org/books/OT98](http://www.siam.org/books/OT98/)
