@@ -14,7 +14,7 @@
   x[] is a vector of values around xbar 
   n is the number of numbers in x[] or length(x)
   
-  This function uses [luDecomposition()]() function to solve the matrix Ax=b. It also requires the function [factorial()](). These functions must be included for the program to work properly. The following headers must also be included:
+  This function uses [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition) function to solve the matrix Ax=b. It also requires the function [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial). These functions must be included for the program to work properly. The following headers must also be included:
   ```
       #include <iostream>
       #include <iomanip>
