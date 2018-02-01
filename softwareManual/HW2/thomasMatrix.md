@@ -16,7 +16,7 @@ The above vector is defined from the below matrix system. These values can be as
   
 The following headers must also be included:
   ```
-      #include <iostream> <-- to show the number on scree
+      #include <iostream> <-- to show the number on screen
       #include <vector>  <-- to define the aformentioned vectors
   ```
 
