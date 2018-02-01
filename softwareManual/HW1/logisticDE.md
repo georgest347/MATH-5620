@@ -6,9 +6,9 @@
 
 **Description/Purpose:** The purpose of this function is to find the value of the analytic solution to the following differential
 equation:
-
+```c++
     dP/dt=a*P-B*P^2
-    
+```    
 With the analytic solution taken to be:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(t)=\frac{\alpha&space;e^{\alpha&space;t}}{\beta&space;e^{\alpha&space;t}&plus;C}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(t)=\frac{\alpha&space;e^{\alpha&space;t}}{\beta&space;e^{\alpha&space;t}&plus;C}" title="P(t)=\frac{\alpha e^{\alpha t}}{\beta e^{\alpha t}+C}" /></a>
@@ -25,24 +25,24 @@ Where Pnot was given to be the inital condition P(0)=Pnot.
 
 **Usage/Example:**
 This function needs to include:
-
+```c++
       #include "math.h"
       #include <iostream>
-
+```
 The function can be used as follows:
-
+```c++
       cout<<logisticDE(1,3,2,5)<<endl;
-      
+```      
 Output from the lines above:
-
+```c++
       1.5
-
+```
 The returned value can also be stored for later use:
-
+```c++
      double Ptime=logisticDE(1,3,2,5);
-
+```
 **Implementation/Code:** The following is the code for logisticDE()
-
+```c++
     /*
     This function given alpha beta and P_0 will
     return the value P(t)
@@ -52,3 +52,4 @@ The returned value can also be stored for later use:
         double ptime=(alpha*exp(alpha*t))/(beta*exp(alpha*t)+C);
         return ptime;
     }
+```
