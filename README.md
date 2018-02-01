@@ -21,7 +21,8 @@ All code for Math 5620:
 | 1        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
 | 1.a       | [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |                |
 | 1.b        | [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |                |
-| 3        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalized the problem u"=f(x)    |
+| 3        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalizes the problem u"=f(x)    |
+| 3.a       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital)      | Initalizes the problem u"=f(x) takes care of f(x)    |
 | 4        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
 | 5        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
 | 8        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
