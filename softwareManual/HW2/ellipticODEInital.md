@@ -85,7 +85,7 @@ The results on the screen were as follows:
 ```
 
 **Implementation/Code:** The following is the code for ellipticODEInital()
-```
+```c++
 vector<double> ellipticODEInital(double a, double b, double ua, double ub,int n){
 	/*-----------------------------------------------------------
 	This function needs the functInital() function with the user
