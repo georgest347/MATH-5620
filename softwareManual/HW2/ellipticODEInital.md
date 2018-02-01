@@ -12,6 +12,8 @@ With boundary values defined by:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=u(a)=u_{a},u(b)=u_{b}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u(a)=u_{a},u(b)=u_{b}" title="u(a)=u_{a},u(b)=u_{b}" /></a>
 
+This function calls the [functInital]() function to solve the f(x) values for each x defined on the interval from a to b. The user must include this function, and include the function f(x) from there problem here. 
+
 **Input:** This function takes the values a,b,ua,ub, and n:
 a= the lower bound of the interval in intrest
 b= the upper bound of the interval in intrest
@@ -20,7 +22,7 @@ ub= the boundary value of the function at b
 n= the number of intervals to break the a-b interval into
   
 The following headers must also be included:
-  ```
+  ```c++
       #include <iostream> <-- to show the number on screen
       #include <vector>  <-- to define the aformentioned vectors
   ```
