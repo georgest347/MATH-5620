@@ -10,7 +10,7 @@
 
 vector IV = [as,as,as,ad,ad,ad,al,al,al,b,b,b]
 	
-The above vector is defined from the below matrix system. These values can be assigned by using the [ellipticODEInital]() function.
+The above vector is defined from the below matrix system. These values can be assigned by using the [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital) function.
 	
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}&space;ad&space;&as&space;&0&space;\\&space;al&ad&space;&as&space;\\&space;0&al&space;&ad&space;\end{bmatrix}\begin{bmatrix}&space;u_{1}\\&space;u_{2}\\&space;u_{3}&space;\end{bmatrix}=\begin{bmatrix}&space;b\\&space;b\\&space;b&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;ad&space;&as&space;&0&space;\\&space;al&ad&space;&as&space;\\&space;0&al&space;&ad&space;\end{bmatrix}\begin{bmatrix}&space;u_{1}\\&space;u_{2}\\&space;u_{3}&space;\end{bmatrix}=\begin{bmatrix}&space;b\\&space;b\\&space;b&space;\end{bmatrix}" title="\begin{bmatrix} ad &as &0 \\ al&ad &as \\ 0&al &ad \end{bmatrix}\begin{bmatrix} u_{1}\\ u_{2}\\ u_{3} \end{bmatrix}=\begin{bmatrix} b\\ b\\ b \end{bmatrix}" /></a>
   
@@ -48,7 +48,7 @@ The driving code is shown below:
 	
 	u1=thomasMatrix(IV,n);
 	
-	//for printing the u1 and u2 vectors
+	//for printing the u1 vector
 	for (int i = 0; i < m; i++) {
 		cout << u1[i] << endl;
 	}
