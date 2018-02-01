@@ -63,6 +63,24 @@ The results on the screen were as follows:
 	0.714844
 
 ```
+This result was verified with the following matlab code:
+```
+%Thomas Algorithm verification
+
+A=[-2,1,0;1,-2,1;0,1,-2]
+b=[0.00390625;0.015625;-0.964844]
+
+x=A\b
+```
+results:
+```
+x =
+
+    0.2305
+    0.4648
+    0.7148
+```
+
 
 **Implementation/Code:** The following is the code for thomasMatrix()
 ```
@@ -127,4 +145,3 @@ vector<double> thomasMatrix(vector<double> IV,int n) {
 	return u;
 }
 ```
-
