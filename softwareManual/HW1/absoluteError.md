@@ -13,20 +13,21 @@
 **Usage/Example:**
 
 The function is used when the absolute error is desired between two numbers. It can be called by:
-
+```c++
        cout<<compEpsilon(6,6.5)<<endl;
-      
+```
 Output from the lines above:
-
+```c++
       0.5
-      
+```      
 The value can also be stored for later use by:
-
+```c++
     double error=compEpsilon(6,6.5);
-
+```
 **Implementation/Code:** The following is the code for absoluteError()
-
+```c++
     double absoluteError(double realValue, double approxValue){
         double absError=abs(realValue-approxValue);
         return absError;
     }
+```
