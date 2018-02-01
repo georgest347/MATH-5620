@@ -12,7 +12,7 @@
   b is a vector of type vector<double>
   
 The following headers must also be included:
-  ```
+  ```c++
       #include <iostream> <-- used if displaying the L and U matrix
       #include <iomanip>  <-- used if displaying the L and U matrix
       #include <vector>
@@ -28,7 +28,7 @@ This function is used to solve the problem given below:
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}&space;3&space;&&space;1\\&space;-6&space;&-4&space;\end{bmatrix}*\begin{bmatrix}&space;x_{1}\\x_{2}&space;\end{bmatrix}=\begin{bmatrix}&space;1\\2&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;3&space;&&space;1\\&space;-6&space;&-4&space;\end{bmatrix}*\begin{bmatrix}&space;x_{1}\\x_{2}&space;\end{bmatrix}=\begin{bmatrix}&space;1\\2&space;\end{bmatrix}" title="\begin{bmatrix} 3 & 1\\ -6 &-4 \end{bmatrix}*\begin{bmatrix} x_{1}\\x_{2} \end{bmatrix}=\begin{bmatrix} 1\\2 \end{bmatrix}" /></a>
 
 The driving code is defined below:
-```
+```c++
 	int n = 2;
 	vector<double> a(n);
 	vector<vector<double> > A(n,a);
@@ -47,7 +47,7 @@ The driving code is defined below:
 
 The results on the screen were as follows:
 
-```
+```c++
 	Lower Triangular          Upper Triangular
    1      0                  3      1
   -2      1                  0     -2
@@ -58,7 +58,7 @@ The results on the screen were as follows:
 ```
 
 **Implementation/Code:** The following is the code for luDecomposition()
-```
+```c++
 vector<double> luDecomposition(vector<vector<double> > A, int n,vector<double> b)
 {
 	/*---------------------------------------------------------
