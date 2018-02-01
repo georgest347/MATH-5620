@@ -14,8 +14,8 @@
   x[] is a vector of values around xbar 
   n is the number of numbers in x[] or length(x)
   
-  This function uses [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition) function to solve the matrix Ax=b. It also requires the function [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial). These functions must be included for the program to work properly. The following headers must also be included:
-  ```
+This function uses [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition) function to solve the matrix Ax=b. It also requires the function [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial). These functions must be included for the program to work properly. The following headers must also be included:
+  ```c++
       #include <iostream>
       #include <iomanip>
       #include <vector>
@@ -27,7 +27,7 @@
 **Usage/Example:**
 
 This function was called using the following code:
-```
+```c++
 	double x[5] = { 1,2,3,4,5 }; 	//Define the x vector
 	int n = 5;			//number of terms in the x vector
 	vector<double> coeff;		// Vector to hold the coeff returned
@@ -41,7 +41,7 @@ This function was called using the following code:
 ```
 The results on the screen were as follows:
 
-```
+```c++
 	0.916667
 	-4.66667
 	9.5
@@ -52,7 +52,7 @@ The results on the screen were as follows:
 Results have been validated with matlab code from [[1]](http://www.siam.org/books/OT98/) pp 11
 
 **Implementation/Code:** The following is the code for fdCoeffV()
-
+```c++
       vector<double> fdCoeffV(int k, double xbar, double x[],int n) {
 	//Builds a matrix A, U, L
 	vector<double> a(n);
@@ -111,7 +111,7 @@ Results have been validated with matlab code from [[1]](http://www.siam.org/book
 	
 		return y;
     }
-       
+  ```     
    **References** 
      
    [1] "Finite Difference Methods for Ordinary and Partial Differential Equations", Randall J. LeVeque, 2007
