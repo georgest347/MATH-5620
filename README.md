@@ -21,8 +21,8 @@ All code for Math 5620:
 | 1        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
 | 1.a       | [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |                |
 | 1.b        | [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |                |
-| 3        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteError)      | Returns the aboslute error of two numbers    |
-| 4        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tri diagonal symetric matrix   |
+| 3        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalized the problem u"=f(x)    |
+| 4        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
 | 5        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
 | 8        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
 | 9        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
