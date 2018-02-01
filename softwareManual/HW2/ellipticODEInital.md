@@ -12,7 +12,7 @@ With boundary values defined by:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=u(a)=u_{a},u(b)=u_{b}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u(a)=u_{a},u(b)=u_{b}" title="u(a)=u_{a},u(b)=u_{b}" /></a>
 
-This function calls the [functInital]() function to solve the f(x) values for each x defined on the interval from a to b. The user must include this function, and include the function f(x) from there problem here. 
+This function calls the [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital) function to solve the f(x) values for each x defined on the interval from a to b. The user must include this function, and include the function f(x) from there problem here. 
 
 **Input:** This function takes the values a,b,ua,ub, and n:
 a= the lower bound of the interval in intrest
