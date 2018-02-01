@@ -39,7 +39,7 @@ The function W(s) is the Wronskian and the function f(s) is the forcing function
 
 
 **Implementation/Code:** The following is the code for SOLDE()
-
+```c++
       double SOLDE(double a,double b, double c,double yo, double vo, double t) {
       	/* SOLDE (Second Order Linear Differential Equation)
       	This function takes the constant coefficents of a 2nd
@@ -141,3 +141,4 @@ The function W(s) is the Wronskian and the function f(s) is the forcing function
 
 	      return Ytime;
        }
+```
