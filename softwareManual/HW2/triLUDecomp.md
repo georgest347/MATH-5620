@@ -18,6 +18,7 @@ The following headers must also be included:
   ```
       #include <iostream> <-- to show the number on screen
       #include <vector>  <-- to define the aformentioned vectors
+      #include <iomanip> <-- to view tri matrix
   ```
 
 **Output:** This function returns the values of u vector where u is defined as the unknowns in a system of equations of form Au=b. These values can then be used later, or printed to the screen.
@@ -105,11 +106,11 @@ vector<double> triLUDecomp(vector<double> IV,int n){
 		for (int j = 0; j < m; j++) {
 			//ad
 			if (i == j){
-				A[i][j] = IV[i+3];
+				A[i][j] = IV[i+m];
 			}
 			//al
 			if (i == j + 1) {
-				A[i][j] = IV[j+6];
+				A[i][j] = IV[j+2*m];
 			}
 			//as
 			if (i == j - 1) {
@@ -121,6 +122,7 @@ vector<double> triLUDecomp(vector<double> IV,int n){
 
 	/*
 	//see A
+	cout << "A triLU" << endl;
 	for (int i = 0; i < m; i++) {
 	for (int j = 0; j < m; j++) {
 	cout << A[i][j] << " ";
@@ -135,8 +137,16 @@ vector<double> triLUDecomp(vector<double> IV,int n){
 	vector<double> b(m);
 
 	for (int i = 0; i < m; i++) {
-		b[i] = IV[i + 9];
+		b[i] = IV[i + 3*m];
 	}
+
+	/*
+	cout << "b triLU" << endl;
+	for (int i = 0; i < m; i++) {
+		cout << b[i] << endl;
+	}
+	cout << endl;
+	*/
 
 	//Set up two matrix for LU decomp
 	vector<vector<double> > U(m, a);
@@ -176,24 +186,26 @@ vector<double> triLUDecomp(vector<double> IV,int n){
 	}
 
 	/*
-	// setw is for displaying nicely
-	cout << setw(6) << "      Lower Triangular"
-	<< setw(32) << "Upper Triangular" << endl;
-
-	// Displaying the result :
-	for (int i = 0; i < n; i++) {
-	// Lower
-	for (int j = 0; j < n; j++)
-	cout << setw(6) << L[i][j] << "\t";
-	cout << "\t";
-
-	// Upper
-	for (int j = 0; j < n; j++)
-	cout << setw(6) << U[i][j] << "\t";
-	cout << endl;
+	//Show Lower Tri Matrix
+	cout << setw(6) << "      Lower Triangular" << endl;
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << setw(6) << L[i][j];
+		}
+		cout << endl;
 	}
-	*/
+	cout << endl;
 
+	//Show Upper Tri Matrix
+	cout<< setw(6) << "Upper Triangular" << endl;
+	for (int i = 0; i<m; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << setw(6) << U[i][j];
+		}
+		cout << endl;
+	}
+	cout << endl;
+	*/
 
 	// Lower back substitution
 	for (int i = 0; i < m; i++) {
@@ -205,9 +217,9 @@ vector<double> triLUDecomp(vector<double> IV,int n){
 	}
 
 	/*
-	//Print out y vector
-	for (int i = 0; i < n; i++) {
-	cout << y[i] << endl;
+	//Print out u vector
+	for (int i = 0; i < m; i++) {
+	cout << u[i] << endl;
 	}
 	*/
 
