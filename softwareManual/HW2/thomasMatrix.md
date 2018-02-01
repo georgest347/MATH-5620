@@ -6,8 +6,9 @@
 
 **Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix.
 
-**Input:** This function takes two parameters, a vector as defined below, and n, an integer.
-vector<double> IV = [as,as,as,ad,ad,ad,al,al,al,b,b,b]
+**Input:** This function takes two parameters, a vector as defined below, and n, an integer. The integer n is the number of intervals used in ellipticODEInital. 
+
+vector IV = [as,as,as,ad,ad,ad,al,al,al,b,b,b]
 	
 The above vector is defined from the below matrix system. These values can be assigned by using the [ellipticODEInital]() function.
 	
