@@ -13,19 +13,19 @@
 **Usage/Example:**
 
 Use the function as shown below to find the relative error between 1 and 0.75. 
-
+```c++
       cout<<relativeError(1,0.75)<<endl;
-      
+```      
 Output from the lines above:
-
+```c++
       0.25
-      
+```      
 The value returned from relativeError() can also be stored in a variable as shown below:
-
+```c++
     double relError=relativeError(1,0.75);
-
+```
 **Implementation/Code:** The following is the code for relativeError()
-
+```c++
     double relativeError(double realValue, double approxValue){
 
         if  (realValue == 0)
@@ -39,3 +39,4 @@ The value returned from relativeError() can also be stored in a variable as show
         }
 
     }
+```
