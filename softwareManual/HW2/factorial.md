@@ -9,7 +9,7 @@
 **Input:** The only input in this function is n, the number to find the factorial of.
   
 The following headers must also be included:
-  ```
+  ```c++
       #include <iostream> <-- to show the number on screen
   ```
 
@@ -18,11 +18,11 @@ The following headers must also be included:
 **Usage/Example:**
 
 This function is used to solve the problem given below:
-```
+```c++
   5!=x
 ```
 The driving code is defined below:
-```
+```c++
 		double n = 5;
 	double x;
 	x=factorial(n);
@@ -32,13 +32,13 @@ The driving code is defined below:
 
 The results on the screen were as follows:
 
-```
+```c++
 	120
 
 ```
 
 **Implementation/Code:** The following is the code for factorial()
-```
+```c++
 double factorial(double n)
 {
 	if (n > 1)
