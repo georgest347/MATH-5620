@@ -38,7 +38,7 @@ The above vector is defined from the below matrix system.
 **Usage/Example:**
 
 This function was used to initalize a problem with the following values:
-```
+```c++
 a=0;
 b=1;
 ua=0;
@@ -46,7 +46,7 @@ ub=1;
 n=4;
 ```
 The driving code is shown below:
-```
+```c++
 	int n = 4;
   int m=n-1;
 	double b,a;
@@ -69,8 +69,8 @@ The driving code is shown below:
 
 The results on the screen were as follows:
 
-```
-	1
+```c++
+  1
   1
   1
   -2
