@@ -4,9 +4,9 @@
 
 **Language:** C++
 
-**Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix.
+**Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix. This function uses LU decomposition, where A=LU. This turns the Au=b equation into LUu=b. This can be broken into Ly=b and Uu=y.
 
-**Input:** This function takes two parameters, a vector as defined below, and n, an integer. The integer n is the number of intervals used in ellipticODEInital. 
+**Input:** This function takes a vector as defined below. 
 
 vector IV = [as,as,as,ad,ad,ad,al,al,al,b,b,b]
 	
@@ -47,7 +47,7 @@ The driving code is shown below:
 		
 	IV=ellipticODEInital(a,b,ua,ub,n);
 
-	u2 = triLUDecomp(IV, n);
+	u2 = triLUDecomp(IV);
 	
 	//for printing the u2 vector
 	for (int i = 0; i < m; i++) {
@@ -87,7 +87,7 @@ x =
 
 **Implementation/Code:** The following is the code for triLUDecomp()
 ```c++
-vector<double> triLUDecomp(vector<double> IV,int n){
+vector<double> triLUDecomp(vector<double> IV){
 	/*----------------------------------------------
 	This function takes a vector that has the tri
 	diagonals of a matrix and the b vector and 
@@ -100,7 +100,7 @@ vector<double> triLUDecomp(vector<double> IV,int n){
 	// conditions have been applied and reduce the 
 	// matrix.
 
-	int m = n - 1;
+	int m =sizeof(IV)/4;
 	//Set up A matrix
 	vector<double> a(m);
 	vector<vector<double> > A(m, a);
