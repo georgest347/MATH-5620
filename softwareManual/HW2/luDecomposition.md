@@ -4,7 +4,7 @@
 
 **Language:** C++
 
-**Description/Purpose:** This function will take a linear system of equations Ax=b and solve for the vector x. The matrix A is a nxn matrix. The b vector is a nx1 vector and the returned x vector is a nx1 vector.  
+**Description/Purpose:** This function will take a linear system of equations Ax=b and solve for the vector x. The matrix A is a nxn matrix. The b vector is a nx1 vector and the returned x vector is a nx1 vector.  This function uses LU decomposition, where A=LU. This turns the Au=b equation into LUu=b. This can be broken into Ly=b and Uu=y.
 
 **Input:** The function takes the following inputs (A,n,b)
   A is a matrix of type vector<vector<double> > nxn matrix
