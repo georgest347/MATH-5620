@@ -4,7 +4,9 @@
 
 **Language:** C++
 
-**Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix.
+**Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix. This function uses Jacobi Iteration to find the u values. At the heart of this function is the equation shown below:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=u_{i&plus;1}=D^{-1}(b-(L&plus;U)u_{i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_{i&plus;1}=D^{-1}(b-(L&plus;U)u_{i})" title="u_{i+1}=D^{-1}(b-(L+U)u_{i})" /></a>
 
 **Input:** This function takes one vector as defined below. 
 
@@ -16,9 +18,17 @@ The above vector is defined from the below matrix system. These values can be as
   
 The following headers must also be included:
   ```c++
-      #include <iostream> <-- to show the number on screen
-      #include <vector>  <-- to define the aformentioned vectors
+      #include <iostream> //<-- to show the number on screen
+      #include <vector>  //<-- to define the aformentioned vectors
   ```
+ The following functions must be included:
+
+[multiplyMV()](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV) //Used to multiply (L+U)x
+[absoluteErrorNormal()](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal) //Used to find the absolute normalized error between xnew and xold
+[maxVectElem()](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem) //Used to find the max normalized error value.
+	
+
+ 
 
 **Output:** This function returns the values of u vector where u is defined as the unknowns in a system of equations of form Au=b. These values can then be used later, or printed to the screen.
 
