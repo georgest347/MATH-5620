@@ -38,7 +38,9 @@ The following headers must also be included:
  The following functions must be included:
 
 [multiplyMV()](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV) //Used to multiply (L+U)x
+
 [absoluteErrorNormal()](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal) //Used to find the absolute normalized error between xnew and xold
+
 [maxVectElem()](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem) //Used to find the max normalized error value.
 	
 
