@@ -6,7 +6,7 @@
 
 **Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix.
 
-**Input:** This function takes two parameters, a vector as defined below, and n, an integer. The integer n is the number of intervals used in ellipticODEInital. 
+**Input:** This function takes a vector as defined below.
 
 vector IV = [as,as,as,ad,ad,ad,al,al,al,b,b,b]
 	
@@ -46,7 +46,7 @@ The driving code is shown below:
 		
 	IV=ellipticODEInital(a,b,ua,ub,n);
 	
-	u1=thomasMatrix(IV,n);
+	u1=thomasMatrix(IV);
 	
 	//for printing the u1 vector
 	for (int i = 0; i < m; i++) {
@@ -86,8 +86,8 @@ x =
 
 **Implementation/Code:** The following is the code for thomasMatrix()
 ```c++
-vector<double> thomasMatrix(vector<double> IV,int n) {
-	int m = n - 1;
+vector<double> thomasMatrix(vector<double> IV) {
+	int m = sizeof(IV)/4;
 	vector<double> u(m);
 	vector<double> as(m);
 	vector<double> ad(m);
