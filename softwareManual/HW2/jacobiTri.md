@@ -16,7 +16,11 @@ Considering the matrix system above, the components of the equation are defined 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=u_{i}=\begin{bmatrix}&space;u_1\\&space;u_2\\&space;u_3&space;\end{bmatrix}_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_{i}=\begin{bmatrix}&space;u_1\\&space;u_2\\&space;u_3&space;\end{bmatrix}_{i}" title="u_{i}=\begin{bmatrix} u_1\\ u_2\\ u_3 \end{bmatrix}_{i}" /></a>
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=D^{-1}=\begin{bmatrix}&space;1/ad&space;&0&space;&0&space;\\&space;0&space;&1/ad&space;&0&space;\\&space;0&space;&0&space;&1/ad&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D^{-1}=\begin{bmatrix}&space;1/ad&space;&0&space;&0&space;\\&space;0&space;&1/ad&space;&0&space;\\&space;0&space;&0&space;&1/ad&space;\end{bmatrix}" title="D^{-1}=\begin{bmatrix} 1/ad &0 &0 \\ 0 &1/ad &0 \\ 0 &0 &1/ad \end{bmatrix}" /></a>
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=(L&plus;U)=\begin{bmatrix}&space;0&space;&as&space;&0&space;\\&space;al&space;&0&space;&as&space;\\&space;0&space;&al&space;&0&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(L&plus;U)=\begin{bmatrix}&space;0&space;&as&space;&0&space;\\&space;al&space;&0&space;&as&space;\\&space;0&space;&al&space;&0&space;\end{bmatrix}" title="(L+U)=\begin{bmatrix} 0 &as &0 \\ al &0 &as \\ 0 &al &0 \end{bmatrix}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=b=\begin{bmatrix}&space;b\\&space;b\\&space;b&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b=\begin{bmatrix}&space;b\\&space;b\\&space;b&space;\end{bmatrix}" title="b=\begin{bmatrix} b\\ b\\ b \end{bmatrix}" /></a>
 
 **Input:** This function takes one vector as defined below. 
 
