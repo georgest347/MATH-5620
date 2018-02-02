@@ -8,6 +8,16 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=u_{i&plus;1}=D^{-1}(b-(L&plus;U)u_{i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_{i&plus;1}=D^{-1}(b-(L&plus;U)u_{i})" title="u_{i+1}=D^{-1}(b-(L+U)u_{i})" /></a>
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}&space;ad&space;&as&space;&0&space;\\&space;al&ad&space;&as&space;\\&space;0&al&space;&ad&space;\end{bmatrix}\begin{bmatrix}&space;u_{1}\\&space;u_{2}\\&space;u_{3}&space;\end{bmatrix}=\begin{bmatrix}&space;b\\&space;b\\&space;b&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;ad&space;&as&space;&0&space;\\&space;al&ad&space;&as&space;\\&space;0&al&space;&ad&space;\end{bmatrix}\begin{bmatrix}&space;u_{1}\\&space;u_{2}\\&space;u_{3}&space;\end{bmatrix}=\begin{bmatrix}&space;b\\&space;b\\&space;b&space;\end{bmatrix}" title="\begin{bmatrix} ad &as &0 \\ al&ad &as \\ 0&al &ad \end{bmatrix}\begin{bmatrix} u_{1}\\ u_{2}\\ u_{3} \end{bmatrix}=\begin{bmatrix} b\\ b\\ b \end{bmatrix}" /></a>
+
+Considering the matrix system above, the components of the equation are defined as follows:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=u_{i&plus;1}=\begin{bmatrix}&space;u_1\\&space;u_2\\&space;u_3&space;\end{bmatrix}_{i&plus;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_{i&plus;1}=\begin{bmatrix}&space;u_1\\&space;u_2\\&space;u_3&space;\end{bmatrix}_{i&plus;1}" title="u_{i+1}=\begin{bmatrix} u_1\\ u_2\\ u_3 \end{bmatrix}_{i+1}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=u_{i}=\begin{bmatrix}&space;u_1\\&space;u_2\\&space;u_3&space;\end{bmatrix}_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_{i}=\begin{bmatrix}&space;u_1\\&space;u_2\\&space;u_3&space;\end{bmatrix}_{i}" title="u_{i}=\begin{bmatrix} u_1\\ u_2\\ u_3 \end{bmatrix}_{i}" /></a>
+
+
+
 **Input:** This function takes one vector as defined below. 
 
 vector IV = [as,as,as,ad,ad,ad,al,al,al,b,b,b]
