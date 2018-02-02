@@ -14,6 +14,19 @@
 
 **Usage/Example:** The following is the code for multiplyMV():
 
+The following matrix was inputed:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}&space;0&space;&1&space;&0&space;\\&space;1&space;&&space;0&space;&&space;1\\&space;0&&space;1&space;&0&space;\end{bmatrix}\begin{bmatrix}&space;1\\&space;1\\&space;1&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;0&space;&1&space;&0&space;\\&space;1&space;&&space;0&space;&&space;1\\&space;0&&space;1&space;&0&space;\end{bmatrix}\begin{bmatrix}&space;1\\&space;1\\&space;1&space;\end{bmatrix}" title="\begin{bmatrix} 0 &1 &0 \\ 1 & 0 & 1\\ 0& 1 &0 \end{bmatrix}\begin{bmatrix} 1\\ 1\\ 1 \end{bmatrix}" /></a>
+
+The result printed on the screen was:
+```c++
+1
+2
+1
+```
+
+**Implementation/Code:** The following is the code for multiplyMV():
+
 ```c++
 vector<double> multiplyMV(vector<vector<double > > A, vector<double> x) {
 	/*-------------------------------------------------------------------
