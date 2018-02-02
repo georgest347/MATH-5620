@@ -1,10 +1,10 @@
-**Function Name:**          thomasMatrix()
+**Function Name:**          jacobiTri()
 
 **Author:** George Staples
 
 **Language:** C++
 
-**Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix. This function uses Jacobi Iteration to find the u values. At the heart of this function is the equation shown below:
+**Description/Purpose:** This function solves a tridiagonal symetric matrix of form Au=b. Where A is the tridiagonal symetric matrix. If A is split into A=(L+D+U) then Jacobi iteration uses the following equation to solve for the u values through an iterative process.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=u_{i&plus;1}=D^{-1}(b-(L&plus;U)u_{i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u_{i&plus;1}=D^{-1}(b-(L&plus;U)u_{i})" title="u_{i+1}=D^{-1}(b-(L+U)u_{i})" /></a>
 
