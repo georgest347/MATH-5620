@@ -30,7 +30,8 @@ All code for Math 5620:
 | 6.b        | [absoluteErrorNormal](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal)            | Finds the absolute normalized error value |
 | 6.c        | [maxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem)            | Finds the maximum value of an element in a vector |
 | 6.d        | [absMaxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absMaxVectElem)            | Finds the absolute maximum value of an element in a vector |
-| 8        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
+| 8        | [pNormVect](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVect)                      | Finds the p Norm of a vector|
+| 8.a        | [pNormVDiff](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVDiff)                      | Finds the p Norm of the difference of two vectors|
 | 9        | [Null](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
 
 ## INDEX
@@ -47,6 +48,8 @@ All code for Math 5620:
 | Error        | [absoluteError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/absoluteError)      | Returns the aboslute error of two numbers    |
 | Error        | [absoluteErrorNormal](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal)            | Finds the absolute normalized error value |
 | Error        | [relativeError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/relativeError)      | Returns the relative error of two numbers    |
+| Error Vect       | [pNormVect](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVect)                      | Finds the p Norm of a vector|
+| Error Vect       | [pNormVDiff](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVDiff)                      | Finds the p Norm of the difference of two vectors|
 | **:---SOLVERS---:** |:------------------:| :------------------------------------------: |
 | DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
 | DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
