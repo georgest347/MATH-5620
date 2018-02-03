@@ -8,7 +8,7 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\left&space;\|&space;x_{p}&space;\right&space;\|=\left&space;(\sum_{i}^{n}&space;\left&space;|x_{i}&space;\right&space;|^{p}&space;\right&space;)^{1/p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left&space;\|&space;x_{p}&space;\right&space;\|=\left&space;(\sum_{i}^{n}&space;\left&space;|x_{i}&space;\right&space;|^{p}&space;\right&space;)^{1/p}" title="\left \| x_{p} \right \|=\left (\sum_{i}^{n} \left |x_{i} \right |^{p} \right )^{1/p}" /></a>
 
-When p=infinity, this function uses the following equation to find the norm.
+When p=infinity, this function uses the following equation to find the norm. This function accesses [absMaxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absMaxVectElem) to find the absolute max value of the vector. 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\left&space;\|&space;x&space;\right&space;\|_{\infty&space;}=max_{i}\left&space;|&space;x_{i}&space;\right&space;|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left&space;\|&space;x&space;\right&space;\|_{\infty&space;}=max_{i}\left&space;|&space;x_{i}&space;\right&space;|" title="\left \| x \right \|_{\infty }=max_{i}\left | x_{i} \right |" /></a>
 
