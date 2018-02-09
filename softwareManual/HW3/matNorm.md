@@ -22,8 +22,8 @@ This function calls the [maxVectElem](https://georgest347.github.io/MATH-5620/so
   
 The following headers must also be included:
   ```c++
-      #include <iostream> <-- to show the number on screen
-      #include <vector>  <-- to define the aformentioned vectors and matricies
+      #include <iostream> //<-- to show the number on screen
+      #include <vector>  //<-- to define the aformentioned vectors and matricies
   ```
 
 **Output:** This function outputs a 1x2 vector that contains the 1 norm in the i=0 index and the infinity norm in the i=1 index
