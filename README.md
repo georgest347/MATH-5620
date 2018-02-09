@@ -34,6 +34,17 @@ All code for Math 5620:
 | 8.a        | [pNormVDiff](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVDiff)                      | Finds the p Norm of the difference of two vectors|
 | 9        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
 
+## HW 3
+
+| Problems | Function Name      | Description                                  |
+| :------: |:------------------:| :------------------------------------------: |
+| 1        | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |                |
+| 2        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)      | NULL    |
+| 3        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)      | NULL    |
+| 4       | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)            | NULL |
+| 5        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)                      | NULL                |
+| 6        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)                      | NULL               |
+
 ## INDEX
 
 | Type | Function Name      | Description                                  |
@@ -48,6 +59,7 @@ All code for Math 5620:
 | Error        | [absoluteError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/absoluteError)      | Returns the aboslute error of two numbers    |
 | Error        | [absoluteErrorNormal](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal)            | Finds the absolute normalized error value |
 | Error        | [relativeError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/relativeError)      | Returns the relative error of two numbers    |
+| Error Mat       | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |
 | Error Vect       | [pNormVect](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVect)                      | Finds the p Norm of a vector|
 | Error Vect       | [pNormVDiff](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVDiff)                      | Finds the p Norm of the difference of two vectors|
 | **:---SOLVERS---:** |:------------------:| :------------------------------------------: |
