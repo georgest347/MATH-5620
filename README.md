@@ -39,7 +39,8 @@ All code for Math 5620:
 | Problems | Function Name      | Description                                  |
 | :------: |:------------------:| :------------------------------------------: |
 | 1        | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |                |
-| 2        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)      | NULL    |
+| 2        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
+| 2.a        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
 | 3        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)      | NULL    |
 | 4       | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)            | NULL |
 | 5        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)                      | NULL                |
@@ -62,15 +63,22 @@ All code for Math 5620:
 | Error Mat       | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |
 | Error Vect       | [pNormVect](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVect)                      | Finds the p Norm of a vector|
 | Error Vect       | [pNormVDiff](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVDiff)                      | Finds the p Norm of the difference of two vectors|
+| **:---INITALIZERS---:** |:------------------:| :------------------------------------------: |        
+| DEInitalizer        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalizes the problem u"=f(x)    |
+| DEInitalizer        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
+| **:---MATRIX/VECTOR MANIPULATION---:** |:------------------:| :------------------------------------------: |
+| MAT        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
+
+| MAT/VEC       | [multiplyMV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV)            | Multiplies a matrix by a vector |
+| VEC        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
 | **:---SOLVERS---:** |:------------------:| :------------------------------------------: |
 | DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
 | DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
 | DESolver        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
 | LASolver       | [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |
-| LASolver        | [multiplyMV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV)            | Multiplies a matrix by a vector |
 | LASolver TRI        | [jacobiTri](https://georgest347.github.io/MATH-5620/softwareManual/HW2/jacobiTri)            | Solves a tridiagonal symetric matrix using Jacobi Iteration |
 | LASolver TRI        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
 | LASolver TRI        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
-| **:---INITALIZERS---:** |:------------------:| :------------------------------------------: |        
-| DEInitalizer        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalizes the problem u"=f(x)    |
-| DEInitalizer        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
+
+
+
