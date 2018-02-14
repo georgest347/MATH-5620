@@ -100,7 +100,7 @@ vector<double> triLUDecomp(vector<double> IV){
 	// conditions have been applied and reduce the 
 	// matrix.
 
-	int m =sizeof(IV)/4;
+	int m =IV.size()/4;
 	//Set up A matrix
 	vector<double> a(m);
 	vector<vector<double> > A(m, a);
