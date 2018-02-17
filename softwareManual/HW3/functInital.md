@@ -21,9 +21,9 @@ The following headers must also be included:
 
 Given a mesh of the form:
 ```c++
-  MESH Xtop Ybottom
-  0   0.25    0.5   0.75    1
-  0   0.25    0.5   0.75    1
+MESH
+X     0  0.25   0.5  0.75     1
+Y     0  0.25   0.5  0.75     1
 ```
 
 The results on the screen were as follows:
