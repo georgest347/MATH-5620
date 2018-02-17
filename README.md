@@ -41,9 +41,10 @@ All code for Math 5620:
 | 1        | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |                |
 | 2        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
 | 2.a        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
-| 3        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)      | NULL    |
-| 4       | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)            | NULL |
-| 5        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)                      | NULL                |
+| 5        | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLub)      | Solves a matrix with Lu decomposition    |
+| 5.a       | [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital)            | Initalizes the Laplacian equation (del)u=f(x,y)|
+| 5.b        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
+| 5.c        | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital)                      | Initalizes f(x,y) for laplacian equation           |
 | 6        | [NULL](https://georgest347.github.io/MATH-5620/softwareManual/HW3/)                      | NULL               |
 
 ## INDEX
@@ -54,6 +55,7 @@ All code for Math 5620:
 | Basic        | [compEpsilon](https://georgest347.github.io/MATH-5620/softwareManual/HW1/compEpsilon)          | Finds the Machine Epsilon    |
 | Basic        | [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |
 | Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital)      | Initalizes the problem u"=f(x) takes care of f(x)    |
+| Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital)                      | Initalizes f(x,y) for laplacian equation           |
 | Basic vector        | [absMaxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absMaxVectElem)            | Finds the absolute maximum value of an element in a vector |
 | Basic vector        | [maxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem)            | Finds the maximum value of an element in a vector |
 | **:---ERROR---:** |:------------------:| :------------------------------------------: |
@@ -66,6 +68,8 @@ All code for Math 5620:
 | **:---INITALIZERS---:** |:------------------:| :------------------------------------------: |        
 | DEInitalizer        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalizes the problem u"=f(x)    |
 | DEInitalizer        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
+| DEInializer      | [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital)            | Initalizes the Laplacian equation (del)u=f(x,y)|
+| MESH        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
 | **:---MATRIX/VECTOR MANIPULATION---:** |:------------------:| :------------------------------------------: |
 | MAT        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
 | MAT/VEC       | [multiplyMV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV)            | Multiplies a matrix by a vector |
@@ -74,10 +78,14 @@ All code for Math 5620:
 | DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
 | DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
 | DESolver        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
+| LASolver   | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLub)      | Solves a matrix with Lu decomposition    |
 | LASolver       | [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |
 | LASolver TRI        | [jacobiTri](https://georgest347.github.io/MATH-5620/softwareManual/HW2/jacobiTri)            | Solves a tridiagonal symetric matrix using Jacobi Iteration |
 | LASolver TRI        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
 | LASolver TRI        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
+
+
+
 
 
 
