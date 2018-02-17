@@ -78,13 +78,13 @@ Y     0  0.25   0.5  0.75     1     0     0     0     0     0     0
 **Implementation/Code:** The following is the code for mesher2D()
 ```c++
 vector<vector<double> > mesher2D(double dx, double dy, vector<double> xb, vector<double> yb){
-    /*------------------------------------------------------------------------------------------------------------------------------
+    /*------------------------------------------------------------------------------------------
     This function sets up a two dimensional mesh given the boundry values, and mesh element size
     dx=mesh size in x direction
     dy=mesh size in y direction
     xb= vector containing lower bound at i=0, and upper bound at i=1 for x
     yb= vector containing lower bound at i=0, and upper bound at i=1 for y
-    ------------------------------------------------------------------------------------------------------------------------------*/
+    ------------------------------------------------------------------------------------------*/
     // Checks to make sure bounds are given as described above
     if(xb[0]>=xb[1]){
         cout<<"CHECK X BOUNDS"<<endl;
