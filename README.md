@@ -41,7 +41,7 @@ All code for Math 5620:
 | 1        | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |                |
 | 2        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
 | 2.a        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
-| 5        | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLub)      | Solves a matrix with Lu decomposition    |
+| 5        | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb)      | Solves a matrix with Lu decomposition    |
 | 5.a       | [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital)            | Initalizes the Laplacian equation (del)u=f(x,y)|
 | 5.b        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
 | 5.c        | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital)                      | Initalizes f(x,y) for laplacian equation           |
