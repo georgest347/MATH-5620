@@ -157,13 +157,13 @@ vector<vector<double> > lapInital(vector<vector<double> > mesh, vector<double> u
             if(xcount==xlength-2){
                 A[i][an-1]=A[i][an-1]-c2*uxb[1];
             }
-            //Takes care of y lower boundry condition U(y,0)
+            //Takes care of y lower boundry condition U(x,0)
             if(ycount==1){
                 A[i][an-1]=A[i][an-1]-c3*uyb[0];
             }
-            //Takes care of y upper boundry condition U(y,1)
+            //Takes care of y upper boundry condition U(x,1)
             if(ycount==ylength-2){
-                A[i][an-1]=A[i][an-1]-c3*uyb[0];
+                A[i][an-1]=A[i][an-1]-c3*uyb[1];
             }
             //cout<<"x"<<xcount<<"y"<<ycount<<endl;
             if(xcount<=xlength-3){
