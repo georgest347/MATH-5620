@@ -113,11 +113,11 @@ These are the x values
 **Implementation/Code:** The following is the code for lapInital9pt()
 ```c++
 vector<vector<double> > lapInital9pt(vector<vector<double> > mesh, vector<double> uxb, vector<double> uyb){
-	/*-----------------------------------------------------------------------------------
+	/*------------------------------------------------------------
 	This fuction imports a 2D mesh to initalize a system of linear
 	equations for the laplacian equation del u =f(x
     It uses a 9pt method this function needs to have dx=dy
-	------------------------------------------------------------------------------------*/
+	------------------------------------------------------------*/
 
 	//Read mesh
 	int large=mesh[0].size();
