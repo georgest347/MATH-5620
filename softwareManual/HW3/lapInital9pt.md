@@ -89,7 +89,7 @@ A MATRIX
          0         0         0         0         0         0         0         0         0   4.16667   16.6667   4.16667         0   16.6667   83.3333   16.6667  0.461779
          0         0         0         0         0         0         0         0         0         0   4.16667   16.6667         0         0   16.6667   83.3333  0.597195
 ```
-Solving this system with the [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLub) solver yielded the following vector of results.
+Solving this system with the [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb) solver yielded the following vector of results.
 
 ```c++
 These are the x values
