@@ -17,7 +17,9 @@ The general formula for the Gauss-Seidel method is:
 This method is an iterative solver that iterates for a given number of iterations, or untill the errror reaches some user specified tolerance. 
 
 This function calls the following functions for computing the error:
+
 [absoluteErrorNormal](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal)
+
 [pNormVect](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVect)
 
 
