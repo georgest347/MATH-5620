@@ -71,6 +71,7 @@ This function was initalized with the following driving code:
 The results on the screen were as follows:
 
 ```c++
+LU decomposition
 These are the x values
 -0.00606555
 -0.0101793
@@ -82,15 +83,15 @@ These are the x values
 -0.0165955
 -0.0166306
 
-Gauss
+Gauss-Seidel solved in 38 Iterations
 These are the x values
--0.00606555
+-0.00606553
 -0.0101792
--0.00960623
+-0.00960622
 -0.0101792
 -0.017253
 -0.0165955
--0.00960623
+-0.00960622
 -0.0165955
 -0.0166306
 ```
@@ -115,11 +116,11 @@ vector<double> gaussSeidel(vector<vector<double> > A){
 
     //Iterative loop
     int iter=0;
-    int maxiter=100;
+    int maxiter=1000;
     double error=10000000000000;
-    double tol=0.0000001;
+    double tol=0.000001;
     int p=1; //Use to change which norm you are using for the error calculation, 0=infinity norm.
-    while (iter <= maxiter&&error>tol)
+    while (iter <= maxiter && error>=tol)
     {
         for(int i=0;i<am;i++){
             xnew[i]=A[i][an-1]/A[i][i];
@@ -136,10 +137,13 @@ vector<double> gaussSeidel(vector<vector<double> > A){
     }
 
     //Print out x vector
+    cout<<"Gauss-Seidel solved in "<<iter<<" Iterations"<<endl;
 	cout << "These are the x values " << endl;
 	for (int i = 0; i < am; i++) {
 		cout << xnew[i] << endl;
 	}
+	cout<<endl;
+
     return xnew;
 
 }
