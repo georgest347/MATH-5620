@@ -51,7 +51,8 @@ All code for Math 5620:
 
 | Problems | Function Name      | Description                                  |
 | :------: |:------------------:| :------------------------------------------: |
-| 1        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gasussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
+| 1        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
+| 1.a        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |                |
 | 2        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
 | 2.a        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
 | 5        | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb)      | Solves a matrix with Lu decomposition    |
@@ -98,7 +99,8 @@ All code for Math 5620:
 | LASolver TRI        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
 | LASolver TRI        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
 
-
+| 1        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
+| 1.a        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |        
 
 
 
