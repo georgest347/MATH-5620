@@ -57,10 +57,6 @@ This function was initalized with the following driving code:
     uyb[0]=0;
     uyb[1]=0;
 
-    //aLUb(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
-
-
-    //aLUb(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
     gaussSeidel(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
     jacobiIter(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
     CG(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
