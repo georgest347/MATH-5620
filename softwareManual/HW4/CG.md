@@ -34,6 +34,11 @@ The following headers must also be included:
 **Output:** This function outputs a vector that corresponds to the x vector in Ax=b.
 	
 **Usage/Example:**
+This program is used to solve the following differential equation:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;u=sin(x,y)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;u=sin(x,y)" title="\Delta u=sin(x,y)" /></a>
+
+Homogeneous Dirichlet boundary conditions are used along with a 5-point stencil.[Mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D) was used to create the mesh. [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital) in conjunction with [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital) were used to initalize the matrix. The Conjugate Gradient method was then used to solve the system.
 
 This function was initalized with the following driving code:
 ```c++
