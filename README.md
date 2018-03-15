@@ -53,7 +53,11 @@ All code for Math 5620:
 | :------: |:------------------:| :------------------------------------------: |
 | 1        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                
 | 1.a        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |                
-| 2       | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |                
+| 2,3       | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |
+| 2.a       | [multiplyVTV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplyVTV)          | multiplies a transpose vector by another vector to get a scalar  | 
+| 2.b       | [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV)          | multiplies a scalar into a vector  |
+| 4       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  | 
+| 4.a       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
 
 
 ## INDEX
@@ -96,8 +100,11 @@ All code for Math 5620:
 
 | 1        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
 | 1.a        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |      
-| 2,3       | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |       
-
+| 2,3       | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |
+| 2.a       | [multiplyVTV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplyVTV)          | multiplies a transpose vector by another vector to get a scalar  | 
+| 2.b       | [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV)          | multiplies a scalar into a vector  | 
+| 4       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  | 
+| 4.a       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
 
 
 
