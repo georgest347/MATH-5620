@@ -37,7 +37,7 @@ The following headers must also be included:
 
 This function was initalized with the following driving code:
 ```c++
-   double dx,dy;
+    double dx,dy;
     vector<double> xb(2);
     vector<double> yb(2);
     vector<double> uxb(2);
@@ -56,30 +56,46 @@ This function was initalized with the following driving code:
     uxb[1]=0;
     uyb[0]=0;
     uyb[1]=0;
-    
+
+    //aLUb(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
+
+
+    //aLUb(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
     gaussSeidel(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
+    jacobiIter(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
     CG(lapInital(mesher2D(dx,dy,xb,yb), uxb, uyb));
-    
+
     return 0;
 ```
 
 The results on the screen were as follows:
 
 ```c++
-n=9
-Gauss-Seidel solved in 11 Iterations
+Gauss-Seidel solved in 38 Iterations
 These are the x values
--0.00585642
--0.0098808
--0.00939706
--0.0098808
--0.0168347
--0.0162969
--0.00939706
--0.0162969
--0.0164214
+-0.00606553
+-0.0101792
+-0.00960622
+-0.0101792
+-0.017253
+-0.0165955
+-0.00960622
+-0.0165955
+-0.0166306
 
-Conjugate Gradient solved in 5 Iterations
+Jacobi solved in 38 Iterations
+These are the x values
+-0.00606553
+-0.0101792
+-0.00960622
+-0.0101792
+-0.017253
+-0.0165955
+-0.00960622
+-0.0165955
+-0.0166306
+
+Conjugate Gradient solved in 5 Iterations and 40 operations
 These are the x values
 -0.00606555
 -0.0101793
@@ -96,7 +112,6 @@ It can be seen that both solvers find the same values. If a higher degree of acc
 
 **Implementation/Code:** The following is the code for CG()
 ```c++
-vector<double> CG(vector<vector<double> > A){
     /*---------------------------------------
     This function uses the Conjugate Gradient
     method to solve the system of equations
@@ -122,10 +137,11 @@ vector<double> CG(vector<vector<double> > A){
 	pold=rold;
 
 	int iter=0;
-    int maxiter=1000000;
-	double tol=0.01;
+    int maxiter=100000;
+	double tol=0.000001;
     double error=10000000000000;
     int p=1;
+    int opcount=0;
 	while(iter<maxiter&&error>=tol){
         w=multiplyMV(A,pold);
         alpha=(multiplyVTV(pold,rold)/(multiplyVTV(pold,multiplyMV(A,pold))));
@@ -141,11 +157,12 @@ vector<double> CG(vector<vector<double> > A){
         xold=xnew;
         pold=pnew;
         rold=rnew;
+        opcount=opcount+8;
         iter++;
 	}
 
 	//Print out x vector
-    cout<<"Conjugate Gradient solved in "<<iter<<" Iterations"<<endl;
+    cout<<"Conjugate Gradient solved in "<<iter<<" Iterations and "<<opcount<<" operations "<<endl;
 	cout << "These are the x values " << endl;
 	for (int i = 0; i < am; i++) {
 		cout << xnew[i] << endl;
