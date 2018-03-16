@@ -91,7 +91,6 @@ All code for Math 5620:
 | VEC        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
 | VEC       | [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV)          | multiplies a scalar into a vector  | 
 | VEC       | [multiplyVTV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplyVTV)          | multiplies a transpose vector by another vector to get a scalar  |
-
 | **:---SOLVERS---:** |:------------------:| :------------------------------------------: |
 | DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
 | DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
