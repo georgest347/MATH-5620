@@ -83,28 +83,25 @@ All code for Math 5620:
 | DEInitalizer        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
 | DEInializer      | [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital)            | Initalizes the Laplacian equation (del)u=f(x,y)|
 | DEInitalizer        | [lapInital9pt](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital9pt)                      | Initalizes the Laplacian equation (del)u=f(x,y) with 9pt method              |
+| MESH       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
 | MESH        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
 | **:---MATRIX/VECTOR MANIPULATION---:** |:------------------:| :------------------------------------------: |
 | MAT        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
 | MAT/VEC       | [multiplyMV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV)            | Multiplies a matrix by a vector |
 | VEC        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
+| VEC       | [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV)          | multiplies a scalar into a vector  | 
+| VEC       | [multiplyVTV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplyVTV)          | multiplies a transpose vector by another vector to get a scalar  |
+
 | **:---SOLVERS---:** |:------------------:| :------------------------------------------: |
 | DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
 | DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
 | DESolver        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
 | LASolver   | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb)      | Solves a matrix with Lu decomposition    |
+| LASolver      | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |
+| LASolver        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
 | LASolver       | [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |
+| LASolver        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |     
 | LASolver TRI        | [jacobiTri](https://georgest347.github.io/MATH-5620/softwareManual/HW2/jacobiTri)            | Solves a tridiagonal symetric matrix using Jacobi Iteration |
 | LASolver TRI        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
 | LASolver TRI        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
-
-| 1        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
-| 1.a        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |      
-| 2,3       | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |
-| 2.a       | [multiplyVTV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplyVTV)          | multiplies a transpose vector by another vector to get a scalar  | 
-| 2.b       | [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV)          | multiplies a scalar into a vector  | 
-| 4       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  | 
-| 4.a       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
-
-
-
+| IVP       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  |
