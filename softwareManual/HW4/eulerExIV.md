@@ -8,7 +8,7 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=y'=f(t,y),&space;y(t_{0})=y_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y'=f(t,y),&space;y(t_{0})=y_{0}" title="y'=f(t,y), y(t_{0})=y_{0}" /></a>
 
-The explicit euler method uses the following general formula to solve the next u values. This is a one step one left end point rule formula.
+The explicit euler method uses the following general formula to solve the next u values. This is a one step left end point rule formula.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Y^{n&plus;1}=Y^{n}&plus;\Delta&space;tf(Y^{n}(t^{n}),t^{n})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Y^{n&plus;1}=Y^{n}&plus;\Delta&space;tf(Y^{n}(t^{n}),t^{n})" title="Y^{n+1}=Y^{n}+\Delta tf(Y^{n}(t^{n}),t^{n})" /></a>
 
