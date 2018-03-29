@@ -88,7 +88,7 @@ Analytic 1.IVP
 93380.6
 ```
 
-**Implementation/Code:** The following is the code for CG()
+**Implementation/Code:** The following is the code for anasol1()
 ```c++
 vector<double> anasol1(double x, vector<double> t, double u0){
     // This function produces the analytic solution for the following IVP
