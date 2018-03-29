@@ -59,6 +59,14 @@ All code for Math 5620:
 | 4       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  | 
 | 4.a       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
 
+## HW 5
+
+| Problems | Function Name      | Description                                  |
+| :------: |:------------------:| :------------------------------------------: |
+| 1        | [anasol1](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol1)          | Provides the analytic solution to u'=xu    |
+| 1.a        | [anasol2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol2)          | Provides the analytic solution to P'=y*P-B*P^2    |
+
+
 
 ## INDEX
 
