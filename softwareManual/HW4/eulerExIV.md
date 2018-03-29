@@ -14,7 +14,7 @@ The explicit euler method uses the following general formula to solve the next u
 
 This function calls the following function:
 [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)
-[functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW4/functInital)
+[functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital)
 
 **Input:** This function takes a mesh created by the 1D mesher, and the inital Y_0 value.
   
