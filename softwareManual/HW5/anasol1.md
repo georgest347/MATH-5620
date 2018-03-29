@@ -19,7 +19,7 @@ The exact solution used in this code is of the form:
 This function calls the following functions:
 [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV) 
 
-**Input:** This function takes the following inputs:
+**Input:** This function takes the following inputs:\
 x: The constant value in the Differential Equation\
 t: a time vector which can be made with [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)\
 u0: the inital value of the IVP problem.\
