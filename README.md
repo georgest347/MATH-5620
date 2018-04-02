@@ -65,6 +65,7 @@ All code for Math 5620:
 | :------: |:------------------:| :------------------------------------------: |
 | 1        | [anasol1](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol1)          | Provides the analytic solution to u'=xu    |
 | 1.a        | [anasol2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol2)          | Provides the analytic solution to P'=y*P-B*P^2    |
+| 2        | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerExIV)          | Provides the numerical solution to IVP using Explicit Euler    |
 
 
 
