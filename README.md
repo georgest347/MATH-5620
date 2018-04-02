@@ -66,6 +66,10 @@ All code for Math 5620:
 | 1        | [anasol1](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol1)          | Provides the analytic solution to u'=xu    |
 | 1.a        | [anasol2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol2)          | Provides the analytic solution to P'=y*P-B*P^2    |
 | 2        | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerExIV)          | Provides the numerical solution to IVP using Explicit Euler    |
+| 3        | [eulerIMIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerIMIV)          | Provides the numerical solution to IVP using Implicit Euler    |
+| 4        | [RK2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK2)          | Provides the numerical solution to IVP using Runge Kutta order 2    |
+| 4.a        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
+| 5        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
 
 
 
@@ -74,6 +78,8 @@ All code for Math 5620:
 | Type | Function Name      | Description                                  |
 | :------: |:------------------:| :------------------------------------------: |
 | **:---BASIC---:** |:------------------:| :------------------------------------------: |
+| Basic        | [anasol1](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol1)          | Provides the analytic solution to u'=xu    |
+| Basic        | [anasol2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol2)          | Provides the analytic solution to P'=y*P-B*P^2    |
 | Basic        | [compEpsilon](https://georgest347.github.io/MATH-5620/softwareManual/HW1/compEpsilon)          | Finds the Machine Epsilon    |
 | Basic        | [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |
 | Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital)      | Initalizes the problem u"=f(x) takes care of f(x)    |
@@ -113,3 +119,8 @@ All code for Math 5620:
 | LASolver TRI        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
 | LASolver TRI        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
 | IVP       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  |
+| IVP.HW5        | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerExIV)          | Provides the numerical solution to IVP using Explicit Euler    |
+| IVP      | [eulerIMIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerIMIV)          | Provides the numerical solution to IVP using Implicit Euler    |
+| IVP        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
+| IVP        | [RK2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK2)          | Provides the numerical solution to IVP using Runge Kutta order 2    |
+| IVP        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
