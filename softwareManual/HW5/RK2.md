@@ -6,7 +6,7 @@
 
 **Description/Purpose:** This function computes a numerical solution to a IVP using Runge Kutta order 2 method defined below:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=u^{*}=u^{n}&plus;0.5\Delta&space;tf(u^{n})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{*}=u^{n}&plus;0.5\Delta&space;tf(u^{n})" title="u^{*}=u^{n}+0.5\Delta tf(u^{n})" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=u^{*}=u^{n}&plus;0.5\Delta&space;tf(u^{n})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{*}=u^{n}&plus;0.5\Delta&space;tf(u^{n})" title="u^{*}=u^{n}+0.5\Delta tf(u^{n})" /></a>\
 <a href="https://www.codecogs.com/eqnedit.php?latex=u^{n&plus;1}=u^{n}&plus;\Delta&space;tf(u^{*})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{n&plus;1}=u^{n}&plus;\Delta&space;tf(u^{*})" title="u^{n+1}=u^{n}+\Delta tf(u^{*})" /></a>
 
 This function calls the following functions:\
