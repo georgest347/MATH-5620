@@ -8,7 +8,7 @@
 
 A 4step Adams-Bashforth method:\
 <a href="https://www.codecogs.com/eqnedit.php?latex=u^{n&plus;4}=u^{n&plus;3}&plus;\frac{\Delta&space;t}{24}\left&space;(&space;-9f(u^n)&plus;37f(u^{n&plus;1})-59f(u^{n&plus;2})&plus;55f(u^{n&plus;3})&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{n&plus;4}=u^{n&plus;3}&plus;\frac{\Delta&space;t}{24}\left&space;(&space;-9f(u^n)&plus;37f(u^{n&plus;1})-59f(u^{n&plus;2})&plus;55f(u^{n&plus;3})&space;\right&space;)" title="u^{n+4}=u^{n+3}+\frac{\Delta t}{24}\left ( -9f(u^n)+37f(u^{n+1})-59f(u^{n+2})+55f(u^{n+3}) \right )" /></a>\
-A 3step Adams-Moulton Method
+A 3step Adams-Moulton Method\
 <a href="https://www.codecogs.com/eqnedit.php?latex=u^{n&plus;4}=u^{n&plus;3}&plus;\frac{\Delta&space;t}{24}\left&space;(&space;f(u^n&plus;1)-5f(u^{n&plus;2})&plus;19f(u^{n&plus;3})&plus;9f(u^{n&plus;4})&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{n&plus;4}=u^{n&plus;3}&plus;\frac{\Delta&space;t}{24}\left&space;(&space;f(u^n&plus;1)-5f(u^{n&plus;2})&plus;19f(u^{n&plus;3})&plus;9f(u^{n&plus;4})&space;\right&space;)" title="u^{n+4}=u^{n+3}+\frac{\Delta t}{24}\left ( f(u^n+1)-5f(u^{n+2})+19f(u^{n+3})+9f(u^{n+4}) \right )" /></a>
 
 This function calls the following functions:\
