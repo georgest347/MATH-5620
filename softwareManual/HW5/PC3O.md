@@ -18,7 +18,7 @@ functInital <<-- This function holds the f(u,t) function from the given differen
 time: A vector that contains the time values to evaluate the function at. Can be produced by: [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)\
 u0: The inital value of the function\
 x: A constant contained in the differential equation\
-B: Another constant contained in the differentail equation\
+B: Another constant contained in the differential equation
   
 The following headers must also be included:
   ```c++
