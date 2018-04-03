@@ -70,6 +70,8 @@ All code for Math 5620:
 | 4        | [RK2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK2)          | Provides the numerical solution to IVP using Runge Kutta order 2    |
 | 4.a        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
 | 5        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
+| data       | [DATA](https://github.com/georgest347/MATH-5620/blob/master/softwareManual/HW5/HW5.xlsx)          | This is the data collected from running all methods to solve two IVP    |
+
 
 
 
