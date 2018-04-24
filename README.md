@@ -72,6 +72,13 @@ All code for Math 5620:
 | 5        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
 | data       | [DATA](https://github.com/georgest347/MATH-5620/blob/master/softwareManual/HW5/HW5.xlsx)          | This is the data collected from running all methods to solve two IVP    |
 
+## HW 7
+
+| Problems | Function Name      | Description                                  |
+| :------: |:------------------:| :------------------------------------------: |
+| 1        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation    |
+| 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
+| 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
 
 
 
@@ -126,3 +133,8 @@ All code for Math 5620:
 | IVP        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
 | IVP        | [RK2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK2)          | Provides the numerical solution to IVP using Runge Kutta order 2    |
 | IVP        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
+
+
+| 1        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation    |
+| 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
+| 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
