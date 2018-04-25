@@ -31,9 +31,8 @@ The code produced:
 **Implementation/Code:** The following is the code for g1()
 ```c++
 double functInital(int i, double dx, double k,vector<double> u) {
-	// Function that initalizes the f(t,y) values
 	double f;
-    f=(k/(dx*dx))*(u[i+1]-2*u[i]+u[i-1]); //f(P,t) for logistic model of population growth
+    	f=(k/(dx*dx))*(u[i+1]-2*u[i]+u[i-1]); 
 
 	return f;
 }
