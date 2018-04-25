@@ -96,7 +96,7 @@ These are the x values
 -0.0166306
 ```
 
-The upper values were found with [aLUb](), another matrix solver, the lower values were found with the Gauss Seidel method. These results are the same. If the tolerance was changed, the Gauss Seidel would approximate the solution better. 
+The upper values were found with [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb), another matrix solver, the lower values were found with the Gauss Seidel method. These results are the same. If the tolerance was changed, the Gauss Seidel would approximate the solution better. 
 
 **Implementation/Code:** The following is the code for gaussSeidel()
 ```c++
