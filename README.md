@@ -76,9 +76,10 @@ All code for Math 5620:
 
 | Problems | Function Name      | Description                                  |
 | :------: |:------------------:| :------------------------------------------: |
-| 1        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation    |
+| 1        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation Explicit Euler   |
 | 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
 | 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
+| 2        | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
 
 
 
@@ -135,6 +136,7 @@ All code for Math 5620:
 | IVP        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
 
 
-| 1        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation    |
+| 1        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation Explicit Euler   |
 | 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
 | 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
+| 2        | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
