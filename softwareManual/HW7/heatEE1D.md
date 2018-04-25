@@ -13,9 +13,9 @@ The Explicit Euler FD method takes the following form:
 <a href="https://www.codecogs.com/eqnedit.php?latex=U_{j}^{n&plus;1}=U_{j}^{n}&plus;\frac{k\Delta&space;t}{\Delta&space;x^2}(U_{j&plus;1}^{n}-2U_{j}^{n}&plus;U_{j-1}^{n})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U_{j}^{n&plus;1}=U_{j}^{n}&plus;\frac{k\Delta&space;t}{\Delta&space;x^2}(U_{j&plus;1}^{n}-2U_{j}^{n}&plus;U_{j-1}^{n})" title="U_{j}^{n+1}=U_{j}^{n}+\frac{k\Delta t}{\Delta x^2}(U_{j+1}^{n}-2U_{j}^{n}+U_{j-1}^{n})" /></a>
 
 This function calls the following functions:\
-g1 <<-- This function holds the function corresponding to the boundry condition at x=0\
-g2 <<-- This function holds the function corresponding to the boundry condition at x=L\
-mesher2D <<-- This function creates a 2D mesh for the FD problem. one axis is space and the other is time.\
+[g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1) <<-- This function holds the function corresponding to the boundry condition at x=0\
+[g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2) <<-- This function holds the function corresponding to the boundry condition at x=L\
+[mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D) <<-- This function creates a 2D mesh for the FD problem. one axis is space and the other is time.\
 
 **Input:** This function takes the following inputs:\
 mesh: A matrix that contains the 2D mesh. Can be produced by: [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)\
@@ -27,6 +27,8 @@ The following headers must also be included:
       #include <iostream> //<-- to show the number on screen
       #include <vector>  //<-- to define the aformentioned vectors and matricies
       #include <iomanip> //<--to show the data
+      #include <iostream> //<-- used for file out put. (Graphing in excel)
+      #include <fstream> //<-- used for file output. (Graphing in excel)
   ```
 
 **Output:** This function outputs a matrix 'u' that is the numerical solution to the equation specified above. The first index number corresponds to time, and the second index number corresponds to space.
