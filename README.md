@@ -4,6 +4,65 @@ Numerical solutions of Differential Equations
 
 All code for Math 5620:
 
+## INDEX
+
+| Type | Function Name      | Description                                  |
+| :------: |:------------------:| :------------------------------------------: |
+| **:---BASIC---:** |:------------------:| :------------------------------------------: |
+| Basic        | [anasol1](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol1)          | Provides the analytic solution to u'=xu    |
+| Basic        | [anasol2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol2)          | Provides the analytic solution to P'=y*P-B*P^2    |
+| Basic        | [compEpsilon](https://georgest347.github.io/MATH-5620/softwareManual/HW1/compEpsilon)          | Finds the Machine Epsilon    |
+| Basic        | [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |
+| Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital)      | Initalizes the problem u"=f(x) takes care of f(x)    |
+| Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital)                      | Initalizes f(x,y) for laplacian equation           |
+| Basic       | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D |
+| Basic      | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
+| Basic vector        | [absMaxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absMaxVectElem)            | Finds the absolute maximum value of an element in a vector |
+| Basic vector        | [maxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem)            | Finds the maximum value of an element in a vector |
+| **:---ERROR---:** |:------------------:| :------------------------------------------: |
+| Error        | [absoluteError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/absoluteError)      | Returns the aboslute error of two numbers    |
+| Error        | [absoluteErrorNormal](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal)            | Finds the absolute normalized error value |
+| Error        | [relativeError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/relativeError)      | Returns the relative error of two numbers    |
+| Error Mat       | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |
+| Error Vect       | [pNormVect](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVect)                      | Finds the p Norm of a vector|
+| Error Vect       | [pNormVDiff](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVDiff)                      | Finds the p Norm of the difference of two vectors|
+| **:---INITALIZERS---:** |:------------------:| :------------------------------------------: |        
+| DEInitalizer        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalizes the problem u"=f(x)    |
+| DEInitalizer        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
+| DEInializer      | [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital)            | Initalizes the Laplacian equation (del)u=f(x,y)|
+| DEInitalizer        | [lapInital9pt](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital9pt)                      | Initalizes the Laplacian equation (del)u=f(x,y) with 9pt method              |
+| MESH       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
+| MESH        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
+| PAR       | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
+| **:---MATRIX/VECTOR MANIPULATION---:** |:------------------:| :------------------------------------------: |
+| MAT        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
+| MAT/VEC       | [multiplyMV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV)            | Multiplies a matrix by a vector |
+| VEC        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
+| VEC       | [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV)          | multiplies a scalar into a vector  | 
+| VEC       | [multiplyVTV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplyVTV)          | multiplies a transpose vector by another vector to get a scalar  |
+| **:---SOLVERS---:** |:------------------:| :------------------------------------------: |
+| DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
+| DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
+| DESolver        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
+| LASolver   | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb)      | Solves a matrix with Lu decomposition    |
+| LASolver      | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |
+| LASolver        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
+| LASolver       | [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |
+| LASolver        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |     
+| LASolver TRI        | [jacobiTri](https://georgest347.github.io/MATH-5620/softwareManual/HW2/jacobiTri)            | Solves a tridiagonal symetric matrix using Jacobi Iteration |
+| LASolver TRI        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
+| LASolver TRI        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
+| IVP       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  |
+| IVP.HW5        | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerExIV)          | Provides the numerical solution to IVP using Explicit Euler    |
+| IVP      | [eulerIMIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerIMIV)          | Provides the numerical solution to IVP using Implicit Euler    |
+| IVP        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
+| IVP        | [RK2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK2)          | Provides the numerical solution to IVP using Runge Kutta order 2    |
+| IVP        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
+| PAR        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation Explicit Euler   |
+| PAR     | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
+| PAR        | [heatPC](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatPC)          | Solve the 1D heat equation using PC  |
+| PAR       | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
+
 ## HW 1
 
 | Problems | Function Name      | Description                                  |
@@ -83,69 +142,3 @@ All code for Math 5620:
 | 4        | [heatPC](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatPC)          | Solve the 1D heat equation using PC  |
 | 5        | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
 | 5.a        | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
-
-
-
-
-## INDEX
-
-| Type | Function Name      | Description                                  |
-| :------: |:------------------:| :------------------------------------------: |
-| **:---BASIC---:** |:------------------:| :------------------------------------------: |
-| Basic        | [anasol1](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol1)          | Provides the analytic solution to u'=xu    |
-| Basic        | [anasol2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/anasol2)          | Provides the analytic solution to P'=y*P-B*P^2    |
-| Basic        | [compEpsilon](https://georgest347.github.io/MATH-5620/softwareManual/HW1/compEpsilon)          | Finds the Machine Epsilon    |
-| Basic        | [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |
-| Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital)      | Initalizes the problem u"=f(x) takes care of f(x)    |
-| Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital)                      | Initalizes f(x,y) for laplacian equation           |
-| Basic       | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D |
-| Basic      | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
-| Basic vector        | [absMaxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absMaxVectElem)            | Finds the absolute maximum value of an element in a vector |
-| Basic vector        | [maxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem)            | Finds the maximum value of an element in a vector |
-| **:---ERROR---:** |:------------------:| :------------------------------------------: |
-| Error        | [absoluteError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/absoluteError)      | Returns the aboslute error of two numbers    |
-| Error        | [absoluteErrorNormal](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absoluteErrorNormal)            | Finds the absolute normalized error value |
-| Error        | [relativeError](https://georgest347.github.io/MATH-5620/softwareManual/HW1/relativeError)      | Returns the relative error of two numbers    |
-| Error Mat       | [matNorm](https://georgest347.github.io/MATH-5620/softwareManual/HW3/matNorm)          | Finds the 1 and infinty norms of a Matrix    |
-| Error Vect       | [pNormVect](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVect)                      | Finds the p Norm of a vector|
-| Error Vect       | [pNormVDiff](https://georgest347.github.io/MATH-5620/softwareManual/HW2/pNormVDiff)                      | Finds the p Norm of the difference of two vectors|
-| **:---INITALIZERS---:** |:------------------:| :------------------------------------------: |        
-| DEInitalizer        | [ellipticODEInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipticODEInital)      | Initalizes the problem u"=f(x)    |
-| DEInitalizer        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
-| DEInializer      | [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital)            | Initalizes the Laplacian equation (del)u=f(x,y)|
-| DEInitalizer        | [lapInital9pt](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital9pt)                      | Initalizes the Laplacian equation (del)u=f(x,y) with 9pt method              |
-| MESH       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
-| MESH        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
-| PAR       | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
-| **:---MATRIX/VECTOR MANIPULATION---:** |:------------------:| :------------------------------------------: |
-| MAT        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
-| MAT/VEC       | [multiplyMV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV)            | Multiplies a matrix by a vector |
-| VEC        | [dotProd](https://georgest347.github.io/MATH-5620/softwareManual/HW3/dotProd)      | Finds the dot product of two vectors    |
-| VEC       | [multiplySV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplySV)          | multiplies a scalar into a vector  | 
-| VEC       | [multiplyVTV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/multiplyVTV)          | multiplies a transpose vector by another vector to get a scalar  |
-| **:---SOLVERS---:** |:------------------:| :------------------------------------------: |
-| DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
-| DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
-| DESolver        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
-| LASolver   | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb)      | Solves a matrix with Lu decomposition    |
-| LASolver      | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |
-| LASolver        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
-| LASolver       | [luDecomposition](https://georgest347.github.io/MATH-5620/softwareManual/HW2/luDecomposition)          | Solves the Ax=b matrix with LU Decomposition    |
-| LASolver        | [jacobiIter](https://georgest347.github.io/MATH-5620/softwareManual/HW4/jacobiIter)          | Solves a matrix system using JacobiIteration method  |     
-| LASolver TRI        | [jacobiTri](https://georgest347.github.io/MATH-5620/softwareManual/HW2/jacobiTri)            | Solves a tridiagonal symetric matrix using Jacobi Iteration |
-| LASolver TRI        | [thomasMatrix](https://georgest347.github.io/MATH-5620/softwareManual/HW2/thomasMatrix)      | Uses the Thomas Algorithm to solve a tridiagonal symetric matrix   |
-| LASolver TRI        | [triLUDecomp](https://georgest347.github.io/MATH-5620/softwareManual/HW2/triLUDecomp)            | Solves a tridiagonal symetric matrix using LU decomposition |
-| IVP       | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW4/eulerExIV)          | Solves an IVP using the explicit euler method  |
-| IVP.HW5        | [eulerExIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerExIV)          | Provides the numerical solution to IVP using Explicit Euler    |
-| IVP      | [eulerIMIV](https://georgest347.github.io/MATH-5620/softwareManual/HW5/eulerIMIV)          | Provides the numerical solution to IVP using Implicit Euler    |
-| IVP        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
-| IVP        | [RK2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK2)          | Provides the numerical solution to IVP using Runge Kutta order 2    |
-| IVP        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
-| PAR        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation Explicit Euler   |
-| PAR     | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
-| PAR        | [heatPC](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatPC)          | Solve the 1D heat equation using PC  |
-| PAR       | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
-
-
-
-
