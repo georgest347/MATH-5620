@@ -80,8 +80,10 @@ All code for Math 5620:
 | 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
 | 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
 | 2        | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
+| 4        | [heatPC](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatPC)          | Solve the 1D heat equation using PC  |
 | 5        | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
 | 5.a        | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
+
 
 
 
@@ -96,6 +98,8 @@ All code for Math 5620:
 | Basic        | [factorial](https://georgest347.github.io/MATH-5620/softwareManual/HW2/factorial)          | Finds the factorial of a given number   |
 | Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW2/functInital)      | Initalizes the problem u"=f(x) takes care of f(x)    |
 | Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital)                      | Initalizes f(x,y) for laplacian equation           |
+| Basic       | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D |
+| Basic      | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
 | Basic vector        | [absMaxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absMaxVectElem)            | Finds the absolute maximum value of an element in a vector |
 | Basic vector        | [maxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem)            | Finds the maximum value of an element in a vector |
 | **:---ERROR---:** |:------------------:| :------------------------------------------: |
@@ -112,6 +116,7 @@ All code for Math 5620:
 | DEInitalizer        | [lapInital9pt](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital9pt)                      | Initalizes the Laplacian equation (del)u=f(x,y) with 9pt method              |
 | MESH       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
 | MESH        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
+| PAR       | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
 | **:---MATRIX/VECTOR MANIPULATION---:** |:------------------:| :------------------------------------------: |
 | MAT        | [powerEig](https://georgest347.github.io/MATH-5620/softwareManual/HW3/powerEig)      | Finds the Max eigen value of a Matrix    |
 | MAT/VEC       | [multiplyMV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/multiplyMV)            | Multiplies a matrix by a vector |
@@ -136,12 +141,11 @@ All code for Math 5620:
 | IVP        | [PC3O](https://georgest347.github.io/MATH-5620/softwareManual/HW5/PC3O)          | Provides the numerical solution to IVP using order 3 predictor corrector method    |
 | IVP        | [RK2](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK2)          | Provides the numerical solution to IVP using Runge Kutta order 2    |
 | IVP        | [Rk4](https://georgest347.github.io/MATH-5620/softwareManual/HW5/RK4)          | Provides the numerical solution to IVP using Runge Kutta order 4    |
+| PAR        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation Explicit Euler   |
+| PAR     | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
+| PAR        | [heatPC](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatPC)          | Solve the 1D heat equation using PC  |
+| PAR       | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
 
 
-| 1        | [heatEE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatEE1D)          | Solve the 1D heat equation Explicit Euler   |
-| 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
-| 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
-| 2        | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
-| 5        | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
-| 5.a        | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
+
 
