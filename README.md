@@ -80,6 +80,8 @@ All code for Math 5620:
 | 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
 | 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
 | 2        | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
+| 5        | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
+| 5.a        | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
 
 
 
@@ -140,3 +142,6 @@ All code for Math 5620:
 | 1.a        | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D  |
 | 1.b        | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
 | 2        | [heatIE1D](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatIE1D)          | Solve the 1D heat equation Implicit Euler   |
+| 5        | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
+| 5.a        | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
+
