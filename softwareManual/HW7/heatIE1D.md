@@ -59,7 +59,7 @@ int main()
     t[1]=2;
     x[0]=0;
     x[1]=10;
-    double dt=0.01;
+    double dt=0.001;
     double dx=1.0;
     double u0=25;
     double k=10;
@@ -73,7 +73,7 @@ The first and last lines printed are shown below:
 
 ```c++
 Starting:  20        25        25        25        25        25        25        25        25        25       100
-Ending:    20        26.0615   32.3104   38.9168   46.0171   53.7008   62.0011   70.8909   80.2844   90.0454  100 
+Ending:    20   26.0771   32.3404   38.9587   46.0673   53.7545   62.0531   70.9359   80.3176    90.063       100 
 ```
 
 **Implementation/Code:** The following is the code for heatIE1D()
