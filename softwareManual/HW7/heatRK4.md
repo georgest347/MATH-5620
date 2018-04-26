@@ -59,7 +59,7 @@ int main()
     t[1]=2;
     x[0]=0;
     x[1]=10;
-    double dt=0.01;
+    double dt=0.001;
     double dx=1.0;
     double u0=25;
     double k=10;
@@ -73,7 +73,7 @@ The first and last lines printed are shown below:
 
 ```c++
 Starting:  20        25        25        25        25        25        25        25        25        25       100
-Ending:    20   26.0791   32.3443   38.9642   46.0738   53.7615   62.0599   70.9417   80.3219   90.0652       100 
+Ending:    20   26.0791   32.3443   38.9642   46.0738   53.7615   62.0599   70.9417   80.3219   90.0652       100
 ```
 
 **Implementation/Code:** The following is the code for heatRK4()
