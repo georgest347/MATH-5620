@@ -27,8 +27,8 @@ The following headers must also be included:
       #include <iostream> //<-- to show the number on screen
       #include <vector>  //<-- to define the aformentioned vectors and matricies
       #include <iomanip> //<--to show the data
-      #include <iostream> //<-- used for file out put. (Graphing in excel)
-      #include <fstream> //<-- used for file output. (Graphing in excel)
+      #include <iostream> //<-- used for file out put. (Graphing)
+      #include <fstream> //<-- used for file output. (Graphing)
   ```
 
 **Output:** This function outputs a matrix 'u' that is the numerical solution to the equation specified above. The first index number corresponds to time, and the second index number corresponds to space.
@@ -54,7 +54,7 @@ int main()
     t[1]=2;
     x[0]=0;
     x[1]=10;
-    double dt=0.01;
+    double dt=0.001;
     double dx=1.0;
     double u0=25;
     double k=10;
@@ -68,7 +68,7 @@ The first and last lines printed are shown below:
 
 ```c++
 Starting:  20        25        25        25        25        25        25        25        25        25       100
-Ending:    20   26.0964   32.3774   39.0103   46.1288   53.8204   62.1168   70.9909    80.358   90.0844       100
+Ending:    20   26.0806   32.3471   38.9681   46.0784   53.7665   62.0647   70.9459   80.3249   90.0669       100
 ```
 
 **Implementation/Code:** The following is the code for heatEE1D()
