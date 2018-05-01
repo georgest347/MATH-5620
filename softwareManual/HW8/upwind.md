@@ -48,12 +48,8 @@ Using the following inputs:
   dt=0.001;
   dx=0.1;
 ```
-
-The code produced the following data:
-```c++
-  1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0																		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0.999999	0.999998	0.999995	0.999988	0.99997	0.999929	0.999843	0.999669	0.999333	0.998718	0.997637	0.99582	0																			
-```
 The upwinding method rounded the step function as it propigated it in time. 
+(See HW8.docx for graph)
 
 **Implementation/Code:** The following is the code for upwind()
 ```c++
