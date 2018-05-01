@@ -17,6 +17,7 @@ All code for Math 5620:
 | Basic       | [functInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/functInital)                      | Initalizes f(x,y) for laplacian equation           |
 | Basic       | [g1](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g1)          | Provides boundry condition for heatEE1D |
 | Basic      | [g2](https://georgest347.github.io/MATH-5620/softwareManual/HW7/g2)          | Provides boundry condition for heatEE1D  |
+| Basic        | [hyperSoln](https://georgest347.github.io/MATH-5620/softwareManual/HW8/hyperSoln)          | Provides exact solution to the advection PDE   |
 | Basic vector        | [absMaxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/absMaxVectElem)            | Finds the absolute maximum value of an element in a vector |
 | Basic vector        | [maxVectElem](https://georgest347.github.io/MATH-5620/softwareManual/HW2/maxVectElem)            | Finds the maximum value of an element in a vector |
 | **:---ERROR---:** |:------------------:| :------------------------------------------: |
@@ -31,6 +32,8 @@ All code for Math 5620:
 | DEInitalizer        | [ellipODEcoI](https://georgest347.github.io/MATH-5620/softwareManual/HW2/ellipODEcoI)                      | Initalizes the problem (d/dx)k(x)(du/dx)=f(x) |
 | DEInializer      | [lapInital](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital)            | Initalizes the Laplacian equation (del)u=f(x,y)|
 | DEInitalizer        | [lapInital9pt](https://georgest347.github.io/MATH-5620/softwareManual/HW3/lapInital9pt)                      | Initalizes the Laplacian equation (del)u=f(x,y) with 9pt method              |
+| PDEInitalizer        | [initalCon](https://georgest347.github.io/MATH-5620/softwareManual/HW8/initalCon)          | Provides inital Conditions to the advection PDE   |
+| PDEInitalizer       | [step](https://georgest347.github.io/MATH-5620/softwareManual/HW8/step)          | Provides the boundry conditions for the PDE   |
 | MESH       | [mesher1D](https://georgest347.github.io/MATH-5620/softwareManual/HW4/mesher1D)          | creates a 1D mesh  | 
 | MESH        | [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D)                      | Makes a 2D mesh                |
 | PAR       | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
@@ -44,6 +47,9 @@ All code for Math 5620:
 | DESolver        | [logisticDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/logisticDE)            | Computes the value of the logistic DE at 't' |
 | DESolver        | [SOLDE](https://georgest347.github.io/MATH-5620/softwareManual/HW1/SOLDE)                      | Solves spring mass model LDE                 |
 | DESolver        | [fdCoeffV](https://georgest347.github.io/MATH-5620/softwareManual/HW2/fdCoeffV)          | Finds Coefficients for finite Difference    |                |
+| HYPER       | [hyperLWM](https://georgest347.github.io/MATH-5620/softwareManual/HW8/hyperLWM)          | Uses Lax-Wendroff method to solve the advection PDE   |
+| HYPER      | [hyperWB](https://georgest347.github.io/MATH-5620/softwareManual/HW8/hyperWB)          | Uses WArming and Beam method to solve the advection PDE   |
+| HYPER        | [upwind](https://georgest347.github.io/MATH-5620/softwareManual/HW8/upwind)          | Uses Upwind method to solve the advection PDE   |
 | LASolver   | [aLUb](https://georgest347.github.io/MATH-5620/softwareManual/HW3/aLUb)      | Solves a matrix with Lu decomposition    |
 | LASolver      | [CG](https://georgest347.github.io/MATH-5620/softwareManual/HW4/CG)          | Solves a matrix system using the Conjugate Gradient method  |
 | LASolver        | [gaussSeidel](https://georgest347.github.io/MATH-5620/softwareManual/HW4/gaussSeidel)          | Solves a matrix system using Gauss-Seidel method    |                |
@@ -142,3 +148,16 @@ All code for Math 5620:
 | 4        | [heatPC](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatPC)          | Solve the 1D heat equation using PC  |
 | 5        | [heatRK4](https://georgest347.github.io/MATH-5620/softwareManual/HW7/heatRK4)          | Solve the 1D heat equation using RK4  |
 | 5.a        | [functInial](https://georgest347.github.io/MATH-5620/softwareManual/HW7/functInial)          | Solve the 1D heat equation using RK4  |
+
+## HW 8
+
+| Problems | Function Name      | Description                                  |
+| :------: |:------------------:| :------------------------------------------: |
+| 1        | [hyperSoln](https://georgest347.github.io/MATH-5620/softwareManual/HW8/hyperSoln)          | Provides exact solution to the advection PDE   |
+| 1.a        | [step](https://georgest347.github.io/MATH-5620/softwareManual/HW8/step)          | Provides the boundry conditions for the PDE   |
+| 1.b        | [initalCon](https://georgest347.github.io/MATH-5620/softwareManual/HW8/initalCon)          | Provides inital Conditions to the advection PDE   |
+| 1.c        | [upwind](https://georgest347.github.io/MATH-5620/softwareManual/HW8/upwind)          | Uses Upwind method to solve the advection PDE   |
+| 1.d        | [hyperLWM](https://georgest347.github.io/MATH-5620/softwareManual/HW8/hyperLWM)          | Uses Lax-Wendroff method to solve the advection PDE   |
+| 1.e        | [hyperWB](https://georgest347.github.io/MATH-5620/softwareManual/HW8/hyperWB)          | Uses WArming and Beam method to solve the advection PDE   |
+
+
