@@ -21,6 +21,7 @@ The exact solution of the Advection problem is:
 This function calls the following functions:\
 [step](https://georgest347.github.io/MATH-5620/softwareManual/HW8/step) <<-- This function holds the function to solve the boundry conditions
 [mesher2D](https://georgest347.github.io/MATH-5620/softwareManual/HW3/mesher2D) <<-- This function creates a 2D mesh for the FD problem. one axis is space and the other is time.\
+[initalCon](https://georgest347.github.io/MATH-5620/softwareManual/HW8/initalCon) <<-- This function is used to create the inital conditions.\
 
 **Input:** This function takes the following inputs:\
 mesh=A 2D mesh genterate in space and time.\
