@@ -93,6 +93,7 @@ vector<vector<double> > hyperWB(vector<vector<double> > mesh, vector<double> u0,
         }
         //Boundry conditions
         u[i+1][0]=step(0,mesh[0][xlength/2]);
+        u[i+1][1]=step(mesh[0][dx],mesh[0][xlength/2]);
         u[i+1][xlength-1]=step(mesh[0][xlength-1],mesh[0][xlength/2]);
     }
 
